@@ -290,6 +290,7 @@ nav ul li{
         text-align: center;
         margin: 30px;
         padding-left: 70px;
+        padding-top: 50px;
 
     }
     .second-cont-card-img{
@@ -302,6 +303,12 @@ nav ul li{
         text-align: center;
         padding: 10px;
     }
+    .second-cont-card-heading1{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 18px;
+        text-align: center;
+        padding: 10px;
+    }
     .second-cont-card-icon{
         height: 30px;
         width: 30px;
@@ -310,6 +317,12 @@ nav ul li{
     .second-cont-card-para{
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         font-size: 15px;
+        padding: 5px;
+        padding-right: 10px;
+    }
+    .second-cont-card-para1{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 13px;
         padding: 5px;
         padding-right: 10px;
     }
@@ -335,8 +348,173 @@ nav ul li{
         border-bottom-left-radius: 5px;
         border-bottom-right-radius: 5px;
     }
-   
 
+/* cursor effect */
+.btn0,.btn1,.btn2,.btn3
+{
+    position: relative;
+    margin: 10px;
+    padding-top:10px;
+    text-align: center;
+    height: 320px;
+    width: 36vh;
+    background-color: white;
+    color: rgb(49, 49, 50);
+    text-decoration: none;
+    overflow: hidden;
+    
+
+}
+.btn1:hover{
+    
+    color: black;
+}
+
+
+.img
+{
+    width: 10px;
+}
+.btn0 span 
+{
+    position: relative;
+    z-index: 1;
+
+}
+.btn3 span{
+    position: relative;
+    z-index: 1;
+}
+.btn1 span
+{
+    position: relative;
+    z-index: 1;
+
+}
+.btn2 span
+{
+    position: relative;
+    z-index: 1;
+
+}
+.btn0::before
+{
+    
+    content: '';
+    position: absolute;
+    top: var(--y);
+    left: var(--x);
+    transform: translate(-50%,-50%);
+    width: 0;
+    height: 0;
+    border-style: 2px solid transparent; 
+    border-radius: 50%;
+    background: red;
+    transition: width 0.8s,height 0.8s;
+
+}
+.btn1::before
+{
+    content: '';
+    position: absolute;
+    top: var(--y);
+    left: var(--x);
+    transform: translate(-50%,-50%);
+    width: 0;
+    height: 0;
+    border-style: 2px solid transparent; 
+    border-radius: 50%;
+    background: orange;
+    transition: width 0.8s,height 0.8s;
+
+}
+.btn3::before
+{
+    content: '';
+    position: absolute;
+    top: var(--y);
+    left: var(--x);
+    transform: translate(-50%,-50%);
+    width: 0;
+    height: 0;
+    border-style: 2px solid transparent; 
+    border-radius: 50%;
+    background: purple;
+    transition: width 0.8s,height 0.8s;
+
+}
+.btn2::before
+{
+    content: '';
+    position: absolute;
+    top: var(--y);
+    left: var(--x);
+    transform: translate(-50%,-50%);
+    width: 0;
+    height: 0;
+    border-style: 2px solid transparent; 
+    border-radius: 50%;
+    background:green;
+    transition: width 0.8s,height 0.8s;
+
+}
+.second-cont-anchor{
+    color: rgb(78, 78, 78);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 13px;
+}
+.btn0:hover::before
+{
+
+    width: 1000px;
+    height: 1000px;
+}
+
+.btn1:hover::before
+{
+    width: 1000px;
+    height: 1000px;
+}
+.btn2:hover::before
+{
+    width: 1000px;
+    height: 1000px;
+}
+.btn3:hover::before
+{
+    width: 1000px;
+    height: 1000px;
+}
+.bdy1
+{
+    padding: 0;
+    box-sizing: border-box; 
+    margin: 10px;
+    display: flex;
+    padding: 20px;
+    padding-left: 40px;
+    padding-right:40px;
+    justify-content: center;
+    align-items: center;
+    min-height: 10vh;
+    background:white;
+}
+.cursor-img{
+    width: 110px;
+    height: 90px;
+}
+.btn0 :hover{
+    color: white
+}
+.btn1 :hover{
+    color: white
+}
+.btn2 :hover{
+    color: white
+}
+.btn3 :hover{
+    color: white
+}
 
     
 
