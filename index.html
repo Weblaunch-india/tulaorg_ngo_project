@@ -13,7 +13,8 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>   
-</head>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
 <body>
     <!--Nav bar creation-->
     <div class="div-of-nav">
@@ -32,7 +33,7 @@
           <img src="images/burger.jpg" alt="hamburger" class="nav-hamburger">
         </nav>
     </div>
-        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel" data-aos="fade-up">
           <ol class="carousel-indicators">
             <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active caption-cor"></li>
             <li data-target="#carouselExampleCaptions" data-slide-to="1" class="caption-cor"></li>
@@ -71,12 +72,88 @@
             <span class="sr-only">Next</span>
           </a>
         </div>
-        <div>
-            <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus aliquid sunt ea provident, blanditiis consequuntur quaerat delectus porro distinctio voluptatibus natus ipsa in eaque rem, odit nihil debitis. Fuga, Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque corporis minus eius eum, cum voluptatibus, perferendis quod, natus quia at corrupti rerum iste exercitationem. Placeat dignissimos quod enim officiis tenetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea a, eius quaerat dolor voluptate voluptates deserunt excepturi. Eum iure inventore numquam aperiam, sunt ea quisquam magni obcaecati provident impedit quaerat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum laborum voluptatibus inventore, repellat necessitatibus earum architecto enim optio ex illum dolorum dignissimos placeat sed nobis tempora qui dolor ipsa sit?</atque></h1>
-            <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus aliquid sunt ea provident, blanditiis consequuntur quaerat delectus porro distinctio voluptatibus natus ipsa in eaque rem, odit nihil debitis. Fuga, Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque corporis minus eius eum, cum voluptatibus, perferendis quod, natus quia at corrupti rerum iste exercitationem. Placeat dignissimos quod enim officiis tenetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea a, eius quaerat dolor voluptate voluptates deserunt excepturi. Eum iure inventore numquam aperiam, sunt ea quisquam magni obcaecati provident impedit quaerat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum laborum voluptatibus inventore, repellat necessitatibus earum architecto enim optio ex illum dolorum dignissimos placeat sed nobis tempora qui dolor ipsa sit?</atque></h1>
+        <div class="first-section1">
 
-            <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus aliquid sunt ea provident, blanditiis consequuntur quaerat delectus porro distinctio voluptatibus natus ipsa in eaque rem, odit nihil debitis. Fuga, Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque corporis minus eius eum, cum voluptatibus, perferendis quod, natus quia at corrupti rerum iste exercitationem. Placeat dignissimos quod enim officiis tenetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea a, eius quaerat dolor voluptate voluptates deserunt excepturi. Eum iure inventore numquam aperiam, sunt ea quisquam magni obcaecati provident impedit quaerat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum laborum voluptatibus inventore, repellat necessitatibus earum architecto enim optio ex illum dolorum dignissimos placeat sed nobis tempora qui dolor ipsa sit?</atque></h1>
+          <div class="first-cont-part1" data-aos="fade-left">
+            <button class="first-cont-label">About Us</button>
+            <h1 class="first-cont-heading">You Can Make A difference Raise for Charity!</h1>
+            <p class="first-cont-para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum rem modi tenetur quasi nostrum deleniti accusamus quaerat odit nisi explicabo, laudantium deserunt laboriosam, a blanditiis quam excepturi maxime dicta. Deserunt.</p>
+            <button class="first-cont-button">Make Donation</button>
+          </div>
+          <div class="first-cont-part2" data-aos="fade-right">
+            <img class="first-cont-img" src="https://themes.dynamiclayers.net/charitian/wp-content/uploads/sites/13/2020/02/about-bg-1.png" alt="">
+          </div>
         </div>
-        <script src="navbar.js"></script>
+        <div class="second-cont-part1" data-aos="fade-up">
+          <button class="second-cont-label">Mission and Vission</button>
+          <h1 class="second-cont-heading">Fundraising For People And <br> Cause Cause You Care About</h1>
+          <p class="second-cont-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi itaque repudiandae cum! Dolorum eligendi praesentium consequatur fugiat <br> possimus sit repellendus dolorem quis. Suscipit numquam neque eveniet exercitationem, commodi eaque laboriosam!</p>
+        </div>
+        <div class="second-cont-part2 d-flex flex-row justify-content-center">
+          <div class="second-cont-card shadow-lg" data-aos="fade-right">
+            <img class="second-cont-card-img" src="https://themes.dynamiclayers.net/charitian/wp-content/uploads/sites/13/2020/02/post-7-768x432.jpg" alt="">
+            <div>
+              <h1 class="second-cont-card-heading">New clothes For African People</h1>
+              <div class="d-flex flex-row justify-content-center icon-card-inner">
+                <div class="d-flex flex-row justify-content-center ">
+                  <img class="second-cont-card-icon" src="https://cdn-icons-png.flaticon.com/512/1253/1253796.png?w=740&t=st=1675504203~exp=1675504803~hmac=92cb6e9ab322a93928c24c5cfdd29ea5cf8e353e3028bb9bc2c03ab80256224b" alt="">
+                  <p class="second-cont-card-para">GOAL : $3000</p>
+                </div>
+                <div class="d-flex flex-row justify-content-center icon-card-inner">
+                  <img class="second-cont-card-icon" src="https://cdn-icons-png.flaticon.com/512/1244/1244038.png?w=740&t=st=1675504251~exp=1675504851~hmac=47330c089d4ff8a4313aef42592aebc3566a638f5927d11ae56a402424689fcd" alt="">
+                  <p class="second-cont-card-para">RAISED : $2450</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="second-cont-card shadow-lg" data-aos="fade-up">
+            <img class="second-cont-card-img" src="https://themes.dynamiclayers.net/charitian/wp-content/uploads/sites/13/2020/02/donation-2-768x432.jpg" alt="">
+            <div>
+              <h1 class="second-cont-card-heading">Help Us For Build A New Church</h1>
+              <div class="d-flex flex-row justify-content-center icon-card-inner">
+                <div class="d-flex flex-row justify-content-center ">
+                  <img class="second-cont-card-icon" src="https://cdn-icons-png.flaticon.com/512/1253/1253796.png?w=740&t=st=1675504203~exp=1675504803~hmac=92cb6e9ab322a93928c24c5cfdd29ea5cf8e353e3028bb9bc2c03ab80256224b" alt="">
+                  <p class="second-cont-card-para">GOAL : $10000</p>
+                </div>
+                <div class="d-flex flex-row justify-content-center icon-card-inner">
+                  <img class="second-cont-card-icon" src="https://cdn-icons-png.flaticon.com/512/1244/1244038.png?w=740&t=st=1675504251~exp=1675504851~hmac=47330c089d4ff8a4313aef42592aebc3566a638f5927d11ae56a402424689fcd" alt="">
+                  <p class="second-cont-card-para">RAISED : $5450</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="second-cont-card shadow-lg" data-aos="fade-left">
+            <img class="second-cont-card-img" src="https://themes.dynamiclayers.net/charitian/wp-content/uploads/sites/13/2020/02/donation-3-768x432.jpg" alt="">
+            <div>
+              <h1 class="second-cont-card-heading">Build School For Child In Africa</h1>
+              <div class="d-flex flex-row justify-content-center icon-card-inner">
+                <div class="d-flex flex-row justify-content-center ">
+                  <img class="second-cont-card-icon" src="https://cdn-icons-png.flaticon.com/512/1253/1253796.png?w=740&t=st=1675504203~exp=1675504803~hmac=92cb6e9ab322a93928c24c5cfdd29ea5cf8e353e3028bb9bc2c03ab80256224b" alt="">
+                  <p class="second-cont-card-para">GOAL : $5500</p>
+                </div>
+                <div class="d-flex flex-row justify-content-center icon-card-inner">
+                  <img class="second-cont-card-icon" src="https://cdn-icons-png.flaticon.com/512/1244/1244038.png?w=740&t=st=1675504251~exp=1675504851~hmac=47330c089d4ff8a4313aef42592aebc3566a638f5927d11ae56a402424689fcd" alt="">
+                  <p class="second-cont-card-para">RAISED : $4450</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init(
+            {offset: 120,
+            duration:1000}
+          );
+        </script>
+        
 </body>
 </html>
