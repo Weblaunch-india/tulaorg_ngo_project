@@ -4,9 +4,244 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+    <title>Ngosite</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>   
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
 <body>
-    <h1>new one</h1>
+    <!--Nav bar creation-->
+        <div class="div-of-nav">
+            <nav class="navs1">
+                <h2 class="logo1"><span class="span1">WELFARE SOCIETY</span></h2>
+                <div class="navhide">
+                <ul class="ul-nav1">
+                    <li class="li1"><a href="#home"  class="ul-content1">Home</a></li>
+                    <li class="li1"><a href="#mission"  class="ul-content1">Mission&Vision</a></li>
+                    <li class="li1"><a href="#aboutus"  class="ul-content1">About us</a></li>
+                    <li class="li1"><a href="#events"  class="ul-content1">Events</a></li>
+                    <li class="li1"><a href="#contact"  class="ul-content1">Contact</a></li>
+                    <button class="button1">Donate</button>
+                </ul>
+                </div>
+              
+              <img src="images/burger.jpg" alt="hamburger" class="nav-hamburger">
+            </nav>
+        </div>
+        <div id="home">
+        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel" data-aos="fade-up">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active caption-cor"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="1" class="caption-cor"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="2" class="caption-cor"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active cor-animation">
+              <div class="cor-block-1">
+                <button class="slide-tag">Welcome to welfare Society</button>                <h1 class="slide-corousel">First slide label</h1>
+                <p class="slide-para">Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                <button class="slide-donate">Donate</button>
+              </div>
+            </div>
+            <div class="carousel-item cor-animation">
+              <div class="d-none d-md-block cor-block-2">
+                <button class="slide-tag">Welcome to welfare Society</button>
+                <h1 class="slide-corousel">Second slide label</h1>
+                <p class="slide-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <button class="slide-donate">Donate</button>
+              </div>
+            </div>
+            <div class="carousel-item cor-animation">
+              <div class="d-none d-md-block cor-block-3">
+                <button class="slide-tag">Welcome to welfare Society</button>                <h1 class="slide-corousel">Third slide label</h1>
+                <p class="slide-para">Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                <button class="slide-donate">Donate</button>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+        <div id="aboutus" class="first-section1">
+
+          <div class="first-cont-part1" data-aos="fade-left">
+            <button class="first-cont-label">About Us</button>
+            <h1 class="first-cont-heading">You Can Make A difference Raise for Charity!</h1>
+            <p class="first-cont-para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum rem modi tenetur quasi nostrum deleniti accusamus quaerat odit nisi explicabo, laudantium deserunt laboriosam, a blanditiis quam excepturi maxime dicta. Deserunt.</p>
+            <button class="first-cont-button">Make Donation</button>
+          </div>
+          <div class="first-cont-part2" data-aos="fade-right">
+            <img class="first-cont-img" src="https://themes.dynamiclayers.net/charitian/wp-content/uploads/sites/13/2020/02/about-bg-1.png" alt="">
+          </div>
+        </div>
+        <div id="mission" class="second-cont-part1" data-aos="fade-up">
+          <button class="second-cont-label">Mission and Vission</button>
+          <h1 class="second-cont-heading">Fundraising For People And <br> Cause Cause You Care About</h1>
+          <p class="second-cont-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi itaque repudiandae cum! Dolorum eligendi praesentium consequatur fugiat <br> possimus sit repellendus dolorem quis. Suscipit numquam neque eveniet exercitationem, commodi eaque laboriosam!</p>
+        </div>
+        <div class="second-cont-part2 d-flex flex-row justify-content-center">
+          <div class="second-cont-card shadow-lg" data-aos="fade-right">
+            <img class="second-cont-card-img" src="https://themes.dynamiclayers.net/charitian/wp-content/uploads/sites/13/2020/02/post-7-768x432.jpg" alt="">
+            <div>
+              <h1 class="second-cont-card-heading">New clothes For African People</h1>
+              <div class="d-flex flex-row justify-content-center icon-card-inner">
+                <div class="d-flex flex-row justify-content-center ">
+                  <img class="second-cont-card-icon" src="https://cdn-icons-png.flaticon.com/512/1253/1253796.png?w=740&t=st=1675504203~exp=1675504803~hmac=92cb6e9ab322a93928c24c5cfdd29ea5cf8e353e3028bb9bc2c03ab80256224b" alt="">
+                  <p class="second-cont-card-para">GOAL : $3000</p>
+                </div>
+                <div class="d-flex flex-row justify-content-center icon-card-inner">
+                  <img class="second-cont-card-icon" src="https://cdn-icons-png.flaticon.com/512/1244/1244038.png?w=740&t=st=1675504251~exp=1675504851~hmac=47330c089d4ff8a4313aef42592aebc3566a638f5927d11ae56a402424689fcd" alt="">
+                  <p class="second-cont-card-para">RAISED : $2450</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="second-cont-card shadow-lg" data-aos="fade-up">
+            <img class="second-cont-card-img" src="https://themes.dynamiclayers.net/charitian/wp-content/uploads/sites/13/2020/02/donation-2-768x432.jpg" alt="">
+            <div>
+              <h1 class="second-cont-card-heading">Help Us For Build A New Church</h1>
+              <div class="d-flex flex-row justify-content-center icon-card-inner">
+                <div class="d-flex flex-row justify-content-center ">
+                  <img class="second-cont-card-icon" src="https://cdn-icons-png.flaticon.com/512/1253/1253796.png?w=740&t=st=1675504203~exp=1675504803~hmac=92cb6e9ab322a93928c24c5cfdd29ea5cf8e353e3028bb9bc2c03ab80256224b" alt="">
+                  <p class="second-cont-card-para">GOAL : $10000</p>
+                </div>
+                <div class="d-flex flex-row justify-content-center icon-card-inner">
+                  <img class="second-cont-card-icon" src="https://cdn-icons-png.flaticon.com/512/1244/1244038.png?w=740&t=st=1675504251~exp=1675504851~hmac=47330c089d4ff8a4313aef42592aebc3566a638f5927d11ae56a402424689fcd" alt="">
+                  <p class="second-cont-card-para">RAISED : $5450</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="second-cont-card shadow-lg" data-aos="fade-left">
+            <img class="second-cont-card-img" src="https://themes.dynamiclayers.net/charitian/wp-content/uploads/sites/13/2020/02/donation-3-768x432.jpg" alt="">
+            <div>
+              <h1 class="second-cont-card-heading">Build School For Child In Africa</h1>
+              <div class="d-flex flex-row justify-content-center icon-card-inner">
+                <div class="d-flex flex-row justify-content-center ">
+                  <img class="second-cont-card-icon" src="https://cdn-icons-png.flaticon.com/512/1253/1253796.png?w=740&t=st=1675504203~exp=1675504803~hmac=92cb6e9ab322a93928c24c5cfdd29ea5cf8e353e3028bb9bc2c03ab80256224b" alt="">
+                  <p class="second-cont-card-para">GOAL : $5500</p>
+                </div>
+                <div class="d-flex flex-row justify-content-center icon-card-inner">
+                  <img class="second-cont-card-icon" src="https://cdn-icons-png.flaticon.com/512/1244/1244038.png?w=740&t=st=1675504251~exp=1675504851~hmac=47330c089d4ff8a4313aef42592aebc3566a638f5927d11ae56a402424689fcd" alt="">
+                  <p class="second-cont-card-para">RAISED : $4450</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="events" class="second-cont-part1" data-aos="fade-up">
+          <button class="second-cont-label">Our Events</button>
+          <h1 class="second-cont-heading">We Believe That We Can Save <br> More Lives With you!</h1>
+          <p class="second-cont-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi itaque repudiandae cum! Dolorum eligendi praesentium consequatur fugiat <br> possimus sit repellendus dolorem quis. Suscipit numquam neque eveniet exercitationem, commodi eaque laboriosam!</p>
+        </div>
+         
+        <div class="bdy1">
+            <div class="btn0 shadow-lg" data-aos="fade-right">
+              <span>
+              <img class="cursor-img" src="https://cdn-icons-png.flaticon.com/512/1104/1104887.png?w=740&t=st=1675523005~exp=1675523605~hmac=5ef25f91eb3a63d8a3df5884d6720ff2f1e6e21f86af0ec58f8e989ad758ba06" alt="">
+              <h1 class="second-cont-card-heading1">Clean Water For Poor <br> Children In Asia</h1>
+              <p class="second-cont-card-para1">Volunteers do not have necessarily <br> time they just have the heart</p>
+              <a class="second-cont-anchor" href="">READ MORE</a>
+            </span>
+            </div>
+            <div class="btn1 shadow-lg" data-aos="fade-down">
+              <span>
+              <img class="cursor-img" src="https://cdn-icons-png.flaticon.com/512/1232/1232679.png?w=740&t=st=1675525036~exp=1675525636~hmac=7202fa0587467b478dacfc4e39b7899e88a180989fef65d6377db0722458fc6a" alt="">
+              <h1 class="second-cont-card-heading1">Help Us For Build <br> a New Church</h1>
+              <p class="second-cont-card-para1">Volunteers do not have necessarily <br> time they just have the heart</p>
+              <a class="second-cont-anchor" href="">READ MORE</a>
+            </span>
+            </div>
+            <div class="btn2 shadow-lg" data-aos="fade-up">
+              <span>
+              <img class="cursor-img" src="https://cdn-icons-png.flaticon.com/512/1222/1222230.png?w=740&t=st=1675525136~exp=1675525736~hmac=9edc61e535ec26b6cef7685ee6e5b111b00a9605f45b25dbf7b2f9693a92d37e" alt="">
+              <h1 class="second-cont-card-heading1">Build School For Poor <br> Children in Africa</h1>
+              <p class="second-cont-card-para1">Volunteers do not have necessarily <br> time they just have the heart</p>
+              <a class="second-cont-anchor" href="">READ MORE</a>
+            </span>
+            </div>
+            <div class="btn3 shadow-lg" data-aos="fade-left">
+              <span>
+              <img class="cursor-img" src="https://cdn-icons-png.flaticon.com/512/846/846981.png?w=740&t=st=1675525400~exp=1675526000~hmac=b3c6ef295acf2a416b73117f08c7d0de28a42c221596c4e3efe394688099d8f6" alt="">
+              <h1 class="second-cont-card-heading1">Medical Facilities <br> For People in Ghana</h1>
+              <p class="second-cont-card-para1">Volunteers do not have necessarily <br> time they just have the heart</p>
+              <a class="second-cont-anchor" href="">READ MORE</a>
+            </span>
+            </div>
+
+        <script>
+            const btn0 = document.querySelector(".btn0");
+            btn0.onmousemove = function(e) 
+            {
+                const x=e.pageX - btn0.offsetLeft;
+                const y=e.pageY - btn0.offsetTop;
+
+                btn0.style.setProperty('--x', x+'px');
+                btn0.style.setProperty('--y', y+'px');
+
+
+            }
+            const btn1 = document.querySelector(".btn1");
+            btn1.onmousemove = function(e) 
+            {
+                const x=e.pageX - btn1.offsetLeft;
+                const y=e.pageY - btn1.offsetTop;
+
+                btn1.style.setProperty('--x', x+'px');
+                btn1.style.setProperty('--y', y+'px');
+
+                
+            }
+            const btn2 = document.querySelector(".btn2");
+            btn2.onmousemove = function(e) 
+            {
+                const x=e.pageX - btn2.offsetLeft;
+                const y=e.pageY - btn2.offsetTop;
+
+                btn2.style.setProperty('--x', x+'px');
+                btn2.style.setProperty('--y', y+'px');
+
+                
+            }
+            const btn3 = document.querySelector(".btn3");
+            btn3.onmousemove = function(e) 
+            {
+                const x=e.pageX - btn3.offsetLeft;
+                const y=e.pageY - btn3.offsetTop;
+
+                btn3.style.setProperty('--x', x+'px');
+                btn3.style.setProperty('--y', y+'px');
+
+                
+            }
+        </script>
+        </div>
+
+
+
+
+
+
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init(
+            {offset: 120,
+            duration:1000}
+          );
+        </script>
+        
 </body>
 </html>
