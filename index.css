@@ -940,6 +940,9 @@ transition: all 0.3s ease;
         width: 320px;
         height: 262px;
     }
+    .first-section1{
+        padding-left: 25px;
+    }
     }
 .slider{
 min-height: 55vh;
