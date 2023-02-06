@@ -14,12 +14,16 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>   
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
   </head>
 <body>
     <!--Nav bar creation-->
         <div class="div-of-nav">
             <nav class="navs1">
-                <h2 class="logo1"><span class="span1">WELFARE SOCIETY</span></h2>
+                <div class="new-navs1">
+                  <img src="images/welogonobag.png" class="logo1" alt="">
+                  <h2 class="span1 logo12">TSWS</h2>
+                </div>
                 <div class="navhide">
                 <ul class="ul-nav1">
                     <li class="li1"><a href="#home"  class="ul-content1">Home</a></li>
@@ -27,7 +31,7 @@
                     <li class="li1"><a href="#aboutus"  class="ul-content1">About us</a></li>
                     <li class="li1"><a href="#events"  class="ul-content1">Events</a></li>
                     <li class="li1"><a href="#contact"  class="ul-content1">Contact</a></li>
-                    <button class="button1">Donate</button>
+                    <button class="button1 slidedonate"><span>Donate</span></button>
                 </ul>
                 </div>
               
@@ -44,24 +48,27 @@
           <div class="carousel-inner">
             <div class="carousel-item active cor-animation">
               <div class="cor-block-1">
-                <button class="slide-tag">Welcome to welfare Society</button>                <h1 class="slide-corousel">First slide label</h1>
+                <button class="slide-tag first-cont-label">Welcome to welfare Society</button>
+                <h1 class="slide-corousel">First slide label</h1>
                 <p class="slide-para">Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                <button class="slide-donate">Donate</button>
+                <button class="slidedonate"><span>Donate</span></button>
               </div>
             </div>
             <div class="carousel-item cor-animation">
               <div class="d-none d-md-block cor-block-2">
-                <button class="slide-tag">Welcome to welfare Society</button>
+                <button class="slide-tag first-cont-label">Welcome to welfare Society</button>
                 <h1 class="slide-corousel">Second slide label</h1>
                 <p class="slide-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <button class="slide-donate">Donate</button>
+                <button class="slidedonate"><span>Donate</span></button>
+                </script>
               </div>
             </div>
             <div class="carousel-item cor-animation">
               <div class="d-none d-md-block cor-block-3">
-                <button class="slide-tag">Welcome to welfare Society</button>                <h1 class="slide-corousel">Third slide label</h1>
+                <button class="slide-tag first-cont-label">Welcome to welfare Society</button>                <h1 class="slide-corousel">Third slide label</h1>
                 <p class="slide-para">Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                <button class="slide-donate">Donate</button>
+                <button class="slidedonate"><span>Donate</span></button>
+                </script>
               </div>
             </div>
           </div>
@@ -81,18 +88,20 @@
             <button class="first-cont-label">About Us</button>
             <h1 class="first-cont-heading">You Can Make A difference Raise for Charity!</h1>
             <p class="first-cont-para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum rem modi tenetur quasi nostrum deleniti accusamus quaerat odit nisi explicabo, laudantium deserunt laboriosam, a blanditiis quam excepturi maxime dicta. Deserunt.</p>
-            <button class="first-cont-button">Make Donation</button>
+            <button class="first-cont-button slidedonate"><span>Make A Donation</span></button>
           </div>
           <div class="first-cont-part2" data-aos="fade-right">
-            <img class="first-cont-img" src="https://themes.dynamiclayers.net/charitian/wp-content/uploads/sites/13/2020/02/about-bg-1.png" alt="">
+            <img class="first-cont-img" src="images/0011.JPG" alt="">
           </div>
         </div>
-        <div id="mission" class="second-cont-part1" data-aos="fade-up">
-          <button class="second-cont-label">Mission and Vission</button>
+        <div id="events" class="second-cont-part1" data-aos="fade-up">
+          <button class="second-cont-label">Our Events</button>
           <h1 class="second-cont-heading">Fundraising For People And <br> Cause Cause You Care About</h1>
           <p class="second-cont-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi itaque repudiandae cum! Dolorum eligendi praesentium consequatur fugiat <br> possimus sit repellendus dolorem quis. Suscipit numquam neque eveniet exercitationem, commodi eaque laboriosam!</p>
         </div>
-        <div class="second-cont-part2 d-flex flex-row justify-content-center">
+        <div class="container">
+          <div class="row">
+          <div class="col-12 col-md-6 col-lg-4">
           <div class="second-cont-card shadow-lg" data-aos="fade-right">
             <img class="second-cont-card-img" src="https://themes.dynamiclayers.net/charitian/wp-content/uploads/sites/13/2020/02/post-7-768x432.jpg" alt="">
             <div>
@@ -109,6 +118,8 @@
               </div>
             </div>
           </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
           <div class="second-cont-card shadow-lg" data-aos="fade-up">
             <img class="second-cont-card-img" src="https://themes.dynamiclayers.net/charitian/wp-content/uploads/sites/13/2020/02/donation-2-768x432.jpg" alt="">
             <div>
@@ -125,6 +136,8 @@
               </div>
             </div>
           </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
           <div class="second-cont-card shadow-lg" data-aos="fade-left">
             <img class="second-cont-card-img" src="https://themes.dynamiclayers.net/charitian/wp-content/uploads/sites/13/2020/02/donation-3-768x432.jpg" alt="">
             <div>
@@ -141,14 +154,17 @@
               </div>
             </div>
           </div>
+          </div>
+          </div>
         </div>
-        <div id="events" class="second-cont-part1" data-aos="fade-up">
-          <button class="second-cont-label">Our Events</button>
+        <div id="mission" class="second-cont-part1" data-aos="fade-up">
+          <button class="second-cont-label">Mission and Vission</button>
           <h1 class="second-cont-heading">We Believe That We Can Save <br> More Lives With you!</h1>
           <p class="second-cont-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi itaque repudiandae cum! Dolorum eligendi praesentium consequatur fugiat <br> possimus sit repellendus dolorem quis. Suscipit numquam neque eveniet exercitationem, commodi eaque laboriosam!</p>
         </div>
-         
+        
         <div class="bdy1">
+          <div class="responsive-div">
             <div class="btn0 shadow-lg" data-aos="fade-right">
               <span>
               <img class="cursor-img" src="https://cdn-icons-png.flaticon.com/512/1104/1104887.png?w=740&t=st=1675523005~exp=1675523605~hmac=5ef25f91eb3a63d8a3df5884d6720ff2f1e6e21f86af0ec58f8e989ad758ba06" alt="">
@@ -165,6 +181,8 @@
               <a class="second-cont-anchor" href="">READ MORE</a>
             </span>
             </div>
+          </div>
+          <div class="responsive-div">
             <div class="btn2 shadow-lg" data-aos="fade-up">
               <span>
               <img class="cursor-img" src="https://cdn-icons-png.flaticon.com/512/1222/1222230.png?w=740&t=st=1675525136~exp=1675525736~hmac=9edc61e535ec26b6cef7685ee6e5b111b00a9605f45b25dbf7b2f9693a92d37e" alt="">
@@ -181,6 +199,7 @@
               <a class="second-cont-anchor" href="">READ MORE</a>
             </span>
             </div>
+          </div>
 
         <script>
             const btn0 = document.querySelector(".btn0");
@@ -225,12 +244,22 @@
                 btn3.style.setProperty('--x', x+'px');
                 btn3.style.setProperty('--y', y+'px');
 
-                
+
             }
+                  const slidedonate = document.querySelector(".slidedonate");
+                  slidedonate.onmousemove = function(e) 
+                  {
+                      const x=e.pageX - slidedonate.offsetLeft;
+                      const y=e.pageY - slidedonate.offsetTop;
+        
+                      slidedonate.style.setProperty('--x', x+'px');
+                      slidedonate.style.setProperty('--y', y+'px');
+                  }
         </script>
         </div>
-
-
+           <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus ad dolore alias, iste consequuntur laudantium. Laboriosam velit, dolorem earum consequuntur nam quod vel, nihil deleniti labore soluta officiis, delectus itaque!Loremlore Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod tempore, autem fugit itaque praesentium commodi rerum illo voluptates porro odio quo ab numquam obcaecati ipsum nostrum iste aut voluptatibus dolores?Lorem ipsum dolor sit amet consectetur adipisicing elit. At consectetur, voluptatibus dolore nisi labore deleniti nihil debitis dolorum similique repellendus nemo necessitatibus rerum! Officia sequi molestias sit cum? Quos, suscipit?Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia itaque cupiditate doloremque ut temporibus, neque saepe earum accusantium quasi quo quam nihil ad necessitatibus porro nemo, perspiciatis est deleniti fuga.lore Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident magni placeat accusantium similique doloribus inventore exercitationem, expedita, doloremque quis commodi aut dolorem optio repellat quo eligendi temporibus sequi nobis repudiandae quam tenetur, natus facere impedit! Ipsa, vel? Velit, maiores. Enim delectus explicabo perferendis, cumque mollitia sequi. Dolor enim deserunt aspernatur nihil incidunt consectetur ipsam aut ab. Sint beatae ad dolores nihil, cumque qui temporibus eligendi obcaecati assumenda, in, doloribus nobis ut dolore ipsam pariatur? Deserunt repellat quia dolorum harum, qui in rerum maxime soluta tenetur eius, doloremque id saepe velit consectetur repellendus unde molestiae. Excepturi inventore consequuntur fugit similique vel veniam quis facilis porro necessitatibus adipisci repellat nostrum, esse temporibus illum debitis sunt nam ut eaque. Maxime facere possimus provident ab unde minus, deleniti cupiditate consequatur dolor! At fugit in facere hic voluptas eaque ad doloremque ratione iste incidunt vero, porro accusantium harum aut, ipsum numquam assumenda odio explicabo minus placeat nisi consectetur? Officia quo eligendi, architecto rerum nesciunt harum, excepturi dignissimos facilis non praesentium accusantium illo ut rem minus libero tenetur aut maxime nisi eum nobis. Sunt cum, odit amet deleniti distinctio nostrum sit sequi, voluptatem ut sint facilis modi nam quis, provident eum omnis. Accusamus eius esse a voluptas, labore facilis officiis recusandae et. Neque a voluptatem ipsam nisi doloremque, commodi hic, sit vero rerum perferendis, id maiores ut dolorum quaerat laboriosam minus exercitationem laudantium. Quas quo distinctio eos eaque blanditiis doloribus veniam quibusdam rerum perferendis dignissimos, accusantium qui ea perspiciatis velit dolorum architecto recusandae dolor maiores voluptates quasi saepe laborum a. Quaerat repudiandae voluptatem nostrum excepturi voluptatibus in ad provident pariatur magni commodi. Ratione sequi ducimus maiores impedit. Officiis, labore, illum magni modi nesciunt voluptatem aliquam dignissimos ab, eius iste minus sequi? Maxime esse vero omnis ab perferendis. Vel doloribus ratione expedita quas possimus corrupti doloremque inventore hic nam vitae, voluptates exercitationem reiciendis quia eligendi quaerat dolor, deserunt veniam fuga. Maiores eos aut odit laudantium aliquam nostrum deserunt ipsam perferendis, error magni, accusamus sapiente, quibusdam debitis! Consequuntur, ut? Totam distinctio ipsam corporis magni error cupiditate sit provident maiores doloremque, quas voluptatem ducimus dolores iusto in? Esse at veniam voluptates eveniet nisi debitis? Doloribus earum delectus ut, beatae dolores eius soluta officia quas ad porro! Saepe, facilis! Quam debitis sed quasi molestias. Consequatur, alias fugit voluptatem repellendus eligendi nemo temporibus at architecto aspernatur eum reprehenderit natus excepturi repellat. Quaerat natus nesciunt atque nobis illum inventore asperiores omnis ut dolore molestiae, voluptatibus consequuntur similique, maiores aperiam explicabo temporibus ipsam ea? Nam enim, cumque culpa deleniti, voluptate sequi repellat perferendis in exercitationem dolores fugit magnam maxime beatae corporis consequuntur, laudantium ratione illo unde adipisci nostrum molestias! Dolor quibusdam officia fugit dolore nesciunt. Ut doloremque quas officia laborum, sequi saepe iste fugit ab pariatur aliquam repellendus eaque ex quos. Fugiat rem cumque odio repellat. Beatae esse laboriosam inventore voluptatem, distinctio fuga ipsam voluptates? Consequuntur, culpa. Est repellendus doloremque alias, illum vitae blanditiis recusandae id soluta earum assumenda voluptatem harum voluptates minima, molestiae, suscipit perspiciatis unde vero distinctio mollitia. Aliquid quidem blanditiis voluptate labore placeat quaerat? Totam culpa eveniet aperiam sunt. Dignissimos perspiciatis cumque tempore recusandae quo aut accusantium ab fugiat iure aperiam, quos eum, voluptates reprehenderit veritatis quod incidunt deleniti nulla amet tenetur, nisi libero deserunt soluta dolore illum. Debitis nemo odit ad sit! Ducimus omnis praesentium similique cum vitae architecto deserunt excepturi laborum repudiandae odio, facilis autem illo, fugiat corrupti. Voluptas maiores consequuntur alias provident, itaque assumenda, veritatis perspiciatis dolorem illum sapiente nesciunt quisquam odio quod illo cupiditate obcaecati atque porro similique eius! Aut, cum eaque vero deleniti ipsam iure pariatur ex ipsa nam dolorum, earum minus assumenda, minima perspiciatis? A assumenda illum distinctio odio expedita, ratione enim harum nostrum quis quae dignissimos est consectetur dolores facere eum quam odit nihil earum atque dolorem facilis deserunt. At quo repellat iure quod consequatur eum, architecto in voluptate rerum ipsam et. Cum, expedita! Repudiandae tempore magnam reprehenderit dolore a, sequi optio soluta minima aliquam odit cupiditate, corrupti sint ipsam ipsa similique officia maiores? Praesentium, dolorem. Hic fuga laboriosam harum sunt assumenda eius distinctio. Adipisci quas, esse consequatur optio iusto quia quod laborum in vel alias rerum iste ducimus dolores maxime? Doloremque suscipit quis minus accusamus nostrum sint distinctio quod nobis. Omnis consequatur facilis temporibus minima, ab quod optio qui nam tenetur velit aliquid quisquam? Ab temporibus nemo sapiente veniam nesciunt, qui error cum minima, consequuntur at voluptate ipsum molestias ullam, ex repellat odio illum vero distinctio officiis. Accusamus nihil aut quos sequi maxime aliquid optio vel rerum quia laudantium necessitatibus debitis, distinctio, dolorum recusandae inventore assumenda consectetur odio error non eaque placeat. Necessitatibus eligendi voluptates at voluptate quos et sit facere laborum nihil doloribus corrupti voluptatum sequi fuga illum autem, itaque ipsum, corporis a esse eveniet! Quia, velit! Minima fugit dolorum aliquam ipsum totam, modi culpa ab nostrum labore voluptatibus voluptates porro, esse ex, quo quod quis nam ea magnam. Dolorum reiciendis atque animi sequi similique recusandae, repudiandae aspernatur nesciunt distinctio amet beatae ducimus quasi fuga quia voluptate expedita alias officia? Nostrum voluptatem temporibus porro voluptate, aperiam natus enim molestias eaque nam hic soluta perspiciatis. Sed excepturi qui quam assumenda illo cumque voluptatem blanditiis quibusdam? Ducimus ab autem magni ea neque, distinctio repudiandae eum tempore inventore iste placeat aliquam, adipisci temporibus voluptates perferendis ullam. Sapiente quis deleniti blanditiis eum suscipit! Consequatur illum repellat eveniet veniam vero. Possimus libero repellat natus recusandae porro distinctio incidunt quasi architecto cum laboriosam, minima enim ducimus adipisci? Quos quod error quo esse vel? Distinctio, ex? Ratione magni labore at distinctio suscipit? Itaque nostrum distinctio magnam consequatur quidem saepe dolorem voluptatibus, amet hic quod modi officia dolor aliquid commodi nihil, quasi voluptatem error obcaecati! Quia, voluptatibus fugit eveniet cum beatae quis fugiat quos a? Perferendis eos ullam aliquam deleniti maxime assumenda expedita atque vel iste illum autem architecto quod, cumque, consequuntur reiciendis fugiat animi culpa ut necessitatibus, soluta possimus vitae! Nam dolore consequatur magni at debitis eos, suscipit quasi, quis cum similique exercitationem unde ex doloribus aliquid neque eaque nemo, rerum ipsam perspiciatis? Vel consequatur veritatis atque iusto.
+           </div>
 
 
 
@@ -242,6 +271,52 @@
             duration:1000}
           );
         </script>
+        <script src="navbar.js"></script>
         
 </body>
+<footer class="footer">
+  <div class="container">
+      <div class="row">
+          <div class="footer-col">
+              <h4>company</h4>
+              <ul>
+                  <li><a href="#">about us</a></li>
+                  <li><a href="#">our services</a></li>
+                  <li><a href="#">privacy policy</a></li>
+                  <li><a href="#">affiliate program</a></li>
+              </ul>
+          </div>
+          <div class="footer-col">
+              <h4>get help</h4>
+              <ul>
+                  <li><a href="#">FAQ</a></li>
+                  <li><a href="#">shipping</a></li>
+                  <li><a href="#">returns</a></li>
+                  <li><a href="#">order status</a></li>
+                  <li><a href="#">payment option</a></li>
+              </ul>
+          </div>
+          <div class="footer-col">
+              <h4>online shop</h4>
+              <ul>
+                  <li><a href="#">watch</a></li>
+                  <li><a href="#">bag</a></li>
+                  <li><a href="#">shoes</a></li>
+                  <li><a href="#">dress</a></li>
+              </ul>
+          </div>
+          <div class="footer-col">
+              <h4>follow us</h4>
+              <div class="social-links">
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+          </div>
+      </div>
+  </div>
+
+</footer>
+
 </html>
