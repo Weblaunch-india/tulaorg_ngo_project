@@ -27,7 +27,7 @@
 <body>
     <!--Nav bar creation-->
         <div class="div-of-nav">
-            <nav class="navs1">
+            <nav class="navs1 navbar-fixed-top">
                 <div class="new-navs1">
                   <img src="images/welogonobag.png" class="logo1" alt="">
                   <h2 class="span1 logo12">TSWS</h2>
@@ -43,7 +43,7 @@
                 </ul>
                 </div>
               
-              <img src="images/burger.jpg" alt="hamburger" class="nav-hamburger">
+              <img onclick="show_hide()" src="images/burger.jpg" alt="hamburger" class="nav-hamburger">
             </nav>
         </div>
         <div id="home">
@@ -310,7 +310,9 @@
         <script>
           AOS.init(
             {offset: 120,
-            duration:1000}
+            duration:1000,
+            once:false,
+            mirror:false}
           );
         </script>
         <script src="navbar.js"></script>
