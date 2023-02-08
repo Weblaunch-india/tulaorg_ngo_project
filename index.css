@@ -81,10 +81,16 @@
 }
 
 .logo1 {
-    height: 90px;
-    width: 80px;
-    padding-bottom: 20px;
+    height: 70px;
+    width: 70px;
     padding-top: 0px;
+}
+.logo1:hover{
+    width: 75px;
+    height: 75px;
+    transition: 0.1s;
+    box-shadow: 0 1.4rem 8rem rgba(0, 0, 0, 0.2);
+    
 }
 
 .logo12 {
@@ -876,6 +882,14 @@ transition: all 0.3s ease;
 
 
 }
+.nav-donate{
+    color: white;
+    text-decoration: none;
+}
+.nav-donate:hover{
+    color: white;
+    text-decoration: none;
+}
 
 @media screen and (max-width : 500px){
     .responsive-div{
@@ -997,3 +1011,14 @@ transition: all 0.3s ease;
 background: #e00f0f!important;
 }
 
+
+#preloader
+{
+  background: #ffffff url(https://i0.wp.com/codemyui.com/wp-content/uploads/2017/11/gradient-colour-slide-puzzle-style-loading-animation.gif?fit=880%2C440&ssl=1) no-repeat center center;
+  background-size: 20% ;
+   height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+
+}
