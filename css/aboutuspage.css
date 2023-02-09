@@ -408,6 +408,12 @@ transition: all 0.3s ease;
     padding: 50px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+.part1-heading12{
+    font-size: 40px;
+    text-align: center;
+    padding: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 .part1-para1{
     font-size: 18px;
     padding: 40px;
@@ -437,6 +443,10 @@ transition: all 0.3s ease;
         font-size: 20px;
         padding: 20px;
     }
+    .part1-heading12{
+        font-size: 20px;
+        padding: 20px;
+    }
     .part1-para1{
         font-size: 12px;
         padding: 20px;
@@ -445,4 +455,47 @@ transition: all 0.3s ease;
     .second-section1{
         padding: 10px;
 }
+}
+.profile-img{
+    width: 100%;
+    height: 100%;
+    border-radius: 17px;
+}
+.profile-img:hover{
+    width: 105%;
+    height: 105%;
+    transition: 0.2s;
+    box-shadow: 0 4rem 8rem rgba(0,0,0,0.5);
+}
+.profile-card{
+    padding: 10px;
+    text-align: center;
+}
+.profile-heading{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    padding: 10px;
+}
+.profile-heading:hover{
+    color: #ea1538;
+    transition: .5s;
+}
+.profile-para{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:#ea1538;
+}
+.profile-para:hover{
+    color: black;
+    transition: .5s;
+}
+
+.aboutus-second-section{
+    padding: 20px;
+    margin: 20px;
+}
+@media screen and (max-width:500px){
+    .aboutus-second-section{
+        padding: 5px;
+    margin: 5px;
+    }
 }
