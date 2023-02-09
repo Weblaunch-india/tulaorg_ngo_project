@@ -110,6 +110,78 @@
                 loader.style.display="none";
             } )
         </script>
+
+<div class="">
+    <button onclick="" id = "whatsapp" ><i class="fab fa-whatsapp" aria-hidden="true"></i></button>
+                    
+<button onclick="topFunction()" id = "topbtn" ><i class="fa fa-chevron-up" aria-hidden="true"></i></button>
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+crossorigin="anonymous"></script>
+<!-- navbar animation -->
+
+<script>
+
+$(document).ready(function () {
+  $(window).scroll(function () {
+  if(window.innerWidth>770){
+if ($(window).scrollTop() > 60) {
+ $('.my-navbar').addClass('navbar-scroll');
+ }
+else {
+ $('.my-navbar').removeClass('navbar-scroll');
+ }
+}
+ });
+
+});
+
+</script>
+
+<!--back to top btn-->
+
+<script type="text/javascript">
+
+myButton = document.getElementById("topbtn");
+
+whatsappBtn = document.getElementById("whatsapp");
+
+window.onscroll = function() {scrollfunction()};
+
+function scrollfunction() {
+
+    if(document.body.scrollTop  > 40 || document.documentElement.scrollTop > 40) {
+
+        myButton.style.display = "Block";
+
+        whatsappBtn.style.display = "Block";
+                    } else {
+
+                        myButton.style.display = "none";
+
+                        whatsappBtn.style.display = "none";
+
+                    }
+
+                }
+
+                function topFunction() {
+
+                    document.body.scrollTop = 0;
+
+                    document.documentElement.scrollTop = 0;
+
+                }
+
+</script>
+
 </body>
 <footer class="footer">
     <div class="container">

@@ -501,3 +501,71 @@ transition: all 0.3s ease;
   z-index: 100;
 
 }
+
+
+/*------------scroller and back button*/
+
+#topbtn {
+    display: none;
+    position: fixed;
+    bottom: 62px;
+    right: 25px;
+    z-index: 100;
+    border: 1px solid #ff0000;
+    outline: none;
+    background-color: rgb(255, 0, 0);
+    color: #fcfcfc;
+    cursor: pointer;
+    border-radius: 45px;
+    height: 5vh;
+    width: 5vh;
+    font-size: 25px;
+}
+  #topbtn:hover{
+    background-color: #ffffff;
+    color: #090404;
+    border-color:  #ffffff;
+  }
+
+  
+  #whatsapp {
+    display: none;
+    position: fixed;
+    bottom: 118px;
+    right: 25px;
+    z-index: 100;
+    border: 1px solid #ff0000;
+    outline: none;
+    background-color: rgb(255, 0, 0);
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 50px;
+    height: 5vh;
+    width: 5vh;
+    font-size: 25px;
+    
+}
+#whatsapp:hover{
+background-color: #ffffff;
+color: #000000;
+border-color:  #ffffff;
+}
+
+/*smoothing scroll */
+* {
+scroll-behavior: smooth;
+}
+
+/*scroll bar effect*/
+::-webkit-scrollbar {
+width: 9px;
+background: #ffffff;
+border-radius: 30px;
+border: 1px solid rgb(0, 0, 0);
+}
+::-webkit-scrollbar-thumb {
+border-radius: 60px;
+width: 9px;
+background-color: #cb1a1a;
+}
+/*--------------top down btn------------------*/
