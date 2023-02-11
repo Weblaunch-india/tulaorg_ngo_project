@@ -715,7 +715,7 @@ transition: all 0.3s ease;
 #preloader
 {
   background: #ffffff url(https://res.cloudinary.com/dwhdoklob/image/upload/v1676096099/ezgif.com-video-to-gif_o9qicl.gif) no-repeat center center;
-  background-size: 20% ;
+  background-size: 80% ;
    height: 100vh;
   width: 100%;
   position: fixed;
