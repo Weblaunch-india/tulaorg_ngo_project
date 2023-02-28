@@ -601,7 +601,11 @@ transition: all 0.3s ease;
     margin: 10px;
     margin-left: 0px;
 }
-
+.second-cont-label:hover{
+color: hsl(0, 0%, 0%);
+transition: .3s;
+text-decoration: none;
+}
 .second-cont-heading {
     font-size: 40px;
     padding: 10px;
@@ -1130,7 +1134,7 @@ background-color: #cb1a1a;
 
 
 .div-of-nav {
-    position: sticky;
+    position: absolute;
 }
 
 .navs1 {
