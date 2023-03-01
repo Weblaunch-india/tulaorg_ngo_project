@@ -244,7 +244,7 @@ nav ul li {
 
 .navs1 .nav-hamburger {
     display: none;
-    position: absolute;
+
     top: 35px;
     right: 50px;
     width: 75px;
@@ -1134,7 +1134,7 @@ background-color: #cb1a1a;
 
 
 .div-of-nav {
-    position: absolute;
+    z-index: 10;
 }
 
 .navs1 {
@@ -1289,7 +1289,9 @@ nav ul li {
 .row{
     display: flex;
     flex-wrap: wrap;
+    padding-inline: 5%;
 }
+
 .footer-col{
     width: 25%;
     padding: 0 15px;
@@ -1456,7 +1458,7 @@ transition: all 0.3s ease;
 /*--------------------------footer&navbar css-------------------------*/
 
 .donate-bg-container{
-    background-image: url("https://img.freepik.com/free-photo/user-people-network-circuit-board-link-connection-technology_1379-882.jpg?w=1380&t=st=1675879452~exp=1675880052~hmac=1ce38ab5a3ee338f593beecd3cd425a5b472a1b42af2a9e82044121058030d38");
+    background-image: url("https://media.giphy.com/media/cRLhKFCmCfMFQmzHjd/giphy-downsized-large.gif");
     background-size: cover;
     width: 100vw;
     background-blend-mode: darken;
@@ -2547,7 +2549,7 @@ background-color: #cb1a1a;
 /*------------------------------ donate css-----------------------*/
 
 .donate-bg-container{
-    background-image: url("https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+    background-image: url("https://media.giphy.com/media/cRLhKFCmCfMFQmzHjd/giphy-downsized-large.gif");
     background-size: cover;
     width: 100vw;
     background-blend-mode: darken;
@@ -2857,7 +2859,7 @@ background-color: #cb1a1a;
 }
 
 .donate-bg-container{
-    background-image: url("https://img.freepik.com/free-photo/user-people-network-circuit-board-link-connection-technology_1379-882.jpg?w=1380&t=st=1675879452~exp=1675880052~hmac=1ce38ab5a3ee338f593beecd3cd425a5b472a1b42af2a9e82044121058030d38");
+    background-image: url("https://media.giphy.com/media/cRLhKFCmCfMFQmzHjd/giphy-downsized-large.gif");
     background-size: cover;
     width: 100vw;
     background-blend-mode: darken;
@@ -3715,7 +3717,7 @@ transition: all 0.3s ease;
 
 
 .donate-bg-container{
-  background-image: url("https://img.freepik.com/free-photo/user-people-network-circuit-board-link-connection-technology_1379-882.jpg?w=1380&t=st=1675879452~exp=1675880052~hmac=1ce38ab5a3ee338f593beecd3cd425a5b472a1b42af2a9e82044121058030d38");
+  background-image: url("https://media.giphy.com/media/j3ze48S2KjPORgVJpo/giphy.gif");
   background-size: cover;
   width: 100vw;
   background-blend-mode: darken;
@@ -4194,4 +4196,8 @@ background-color: #cb1a1a;
 .logo1:hover{
     width: 80px;
     height: 90px;
+}
+
+.bgimg{
+    background-image: url("https://media.giphy.com/media/dZLWXI8VO0oSurblwN/giphy.gif");
 }
