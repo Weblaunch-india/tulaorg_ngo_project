@@ -1451,7 +1451,7 @@ transition: all 0.3s ease;
 /*--------------------------footer&navbar css-------------------------*/
 
 .donate-bg-container{
-    background-image: url("https://img.freepik.com/free-photo/user-people-network-circuit-board-link-connection-technology_1379-882.jpg?w=1380&t=st=1675879452~exp=1675880052~hmac=1ce38ab5a3ee338f593beecd3cd425a5b472a1b42af2a9e82044121058030d38");
+    background-image: url("C:\Users\Chandrahas\Downloads\bharath\tulaorg_ngo_project-main\background gifs\about us.gif");
     background-size: cover;
     width: 100vw;
     background-blend-mode: darken;
@@ -1494,37 +1494,37 @@ transition: all 0.3s ease;
 }
 .aboutus-card{
     padding: 10px;
-    background-color: #f83455;
+    background-color: #ea1538;
     margin: 10px;
     border-style: solid;
     border-width: 0px;
     border-bottom-width: 5px;
-    border-color: #f83455;
+    border-color: #ea1538;
 }
 
 .aboutus-card-new{
     padding: 10px;
-    background-color: #f83455;
+    background-color: #ea1538;
     margin: 10px;
     border-style: solid;
     border-width: 0px;
     border-bottom-width: 5px;
-    border-color: #f83455;
+    border-color: #ea1538;
     padding-bottom: 20px;
 }
 .aboutus-card-new1{
     padding: 10px;
-    background-color: #f83455;
+    background-color: #ea1538;
     margin: 10px;
     border-style: solid;
     border-width: 0px;
     border-bottom-width: 5px;
-    border-color: #f83455;
+    border-color: #ea1538;
     padding-bottom: 70px;
 }
 
 .aboutus-card:hover{
-    border-color: black;
+   
     border-radius: 5px;
     box-shadow: 0 4rem 8rem rgba(0,0,0,0.5);
     cursor: pointer;
@@ -1532,7 +1532,7 @@ transition: all 0.3s ease;
 }
 
 .aboutus-card-new:hover{
-    border-color: black;
+   
     border-radius: 5px;
     box-shadow: 0 4rem 8rem rgba(0,0,0,0.5);
     cursor: pointer;
@@ -1540,23 +1540,25 @@ transition: all 0.3s ease;
 }
 
 .aboutus-card-new1:hover{
-    border-color: black;
+
     border-radius: 5px;
     box-shadow: 0 4rem 8rem rgba(0,0,0,0.5);
     cursor: pointer;
 
 }
 .aboutus-heading{
-    font-size: 20px;
-    color:white;
+    font-size: 22px;
+    color:rgb(236, 218, 218);
     font-family: 'Courier New', Courier, monospace;
     padding: 10px;
     text-align: center;
 }
 
 .aboutus-para{
-    font-size: 14px;
-    
+    font-size: 15px;
+    color: white;
+    line-height: 2;
+    letter-spacing: 1px;
     padding: 10px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
@@ -1635,7 +1637,7 @@ transition: all 0.3s ease;
 }
 }
 .profile-img{
-    width: 100%;
+    width: 80%;
     height: 100%;
     border-radius: 17px;
 }
@@ -1946,6 +1948,9 @@ body{
   margin-right: 15px;
   
   
+}
+.h3{
+    color: #1d1c1c;
 }
 .nav-donate{
     color: white;
@@ -2726,6 +2731,8 @@ background-color: #cb1a1a;
     justify-content: center;
     background-color: white;
     padding: 40px;
+    cursor: pointer;
+    
 }
 
 @media screen and (max-width:700px){
@@ -2783,7 +2790,7 @@ background-color: #cb1a1a;
 
 .blog-post_date span {
     display: block;
-    color: #00000080;
+    color: #141313;
     font-size: 20px;
     font-weight: 600;
     margin: .5rem 0;
@@ -3710,7 +3717,7 @@ transition: all 0.3s ease;
 
 
 .donate-bg-container{
-  background-image: url("https://img.freepik.com/free-photo/user-people-network-circuit-board-link-connection-technology_1379-882.jpg?w=1380&t=st=1675879452~exp=1675880052~hmac=1ce38ab5a3ee338f593beecd3cd425a5b472a1b42af2a9e82044121058030d38");
+  background-image: url("https://media.istockphoto.com/id/1367515302/photo/anonymous-people-avatars-in-virtual-space.jpg?s=170667a&w=0&k=20&c=71KJeBTbykSiGtjuQBRlfLvlN2IfYAI2o6FVp8h9UT0=");
   background-size: cover;
   width: 100vw;
   background-blend-mode: darken;
@@ -4010,9 +4017,10 @@ background-color: #cb1a1a;
     cursor: pointer;
     background:#000000;
     color: #fff;
-    border: none;
+    border-radius:50px;
     max-width: 150px;
     padding: 12px;
+    transition: 0.3s;
 }
 .maincontainer .contactform .formbox .inputbox input[type="submit"]:hover
 {
