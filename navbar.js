@@ -11,11 +11,14 @@ function show_hide()
     if(a==1)
     {
         document.getElementById("home").style.display="inline";
+        document.body.style.overflow = 'scroll';
+        // document.style.overflowY = "hidden";
         return a=0;
     }
     else
     {
         document.getElementById("home").style.display="none";
+        document.body.style.overflow = 'hidden';
         return a=1;
     }
 }    

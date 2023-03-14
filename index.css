@@ -10,7 +10,9 @@
 .div-of-nav {
     position: sticky;
 }
-
+nav{
+    z-index: 10000;
+}
 .navs1 {
     height: 10vh;
     width: 100%;
@@ -244,7 +246,7 @@ nav ul li {
 
 .navs1 .nav-hamburger {
     display: none;
-    position: absolute;
+
     top: 35px;
     right: 50px;
     width: 75px;
@@ -334,7 +336,6 @@ transition: all 0.3s ease;
     }
 
     .navs1 .nav-hamburger {
-        position: absolute;
 
         display: block;
         top: -4px;
@@ -349,8 +350,6 @@ transition: all 0.3s ease;
         }
     
         .navs1 .nav-hamburger {
-            position: absolute;
-    
             display: block;
             top: -4px;
             padding: 8px;
@@ -1351,8 +1350,6 @@ transition: all 0.3s ease;
     }
 
     .navs1 .nav-hamburger {
-        position: absolute;
-
         display: block;
         top: -4px;
         padding: 8px;
@@ -1366,8 +1363,7 @@ transition: all 0.3s ease;
         }
     
         .navs1 .nav-hamburger {
-            position: absolute;
-    
+
             display: block;
             top: -4px;
             padding: 8px;
@@ -1377,7 +1373,7 @@ transition: all 0.3s ease;
         .navhide {
             top: 0;
             left: 0;
-            position: absolute;
+
             background-color: white;
             box-shadow: 0 0 10px gray;
             width: 100%;
@@ -2271,7 +2267,6 @@ nav ul li {
 
 .navs1 .nav-hamburger {
     display: none;
-    position: absolute;
     top: 35px;
     right: 50px;
     width: 75px;
@@ -2361,7 +2356,6 @@ transition: all 0.3s ease;
     }
 
     .navs1 .nav-hamburger {
-        position: absolute;
 
         display: block;
         top: -4px;
@@ -2375,8 +2369,7 @@ transition: all 0.3s ease;
         }
     
         .navs1 .nav-hamburger {
-            position: absolute;
-    
+
             display: block;
             top: -4px;
             padding: 8px;
@@ -2386,7 +2379,7 @@ transition: all 0.3s ease;
         .navhide {
             top: 0;
             left: 0;
-            position: absolute;
+
             background-color: white;
             box-shadow: 0 0 10px gray;
             width: 100%;
@@ -3526,7 +3519,6 @@ nav ul li {
 
 .navs1 .nav-hamburger {
     display: none;
-    position: absolute;
     top: 35px;
     right: 50px;
     width: 75px;
@@ -3605,7 +3597,6 @@ transition: all 0.3s ease;
     }
 
     .navs1 .nav-hamburger {
-        position: absolute;
 
         display: block;
         top: -4px;
@@ -3620,8 +3611,6 @@ transition: all 0.3s ease;
         }
     
         .navs1 .nav-hamburger {
-            position: absolute;
-    
             display: block;
             top: -4px;
             padding: 8px;
@@ -3739,6 +3728,9 @@ transition: all 0.3s ease;
 }
 @media screen and (max-width:700px){
   
+    nav{
+        z-index: 1000;
+    }
   .donate-bg-container{
       text-align: start;
       padding: 50px;
