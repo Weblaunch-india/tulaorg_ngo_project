@@ -49,7 +49,7 @@
 
     <div id="preloader"></div>
 
-    <div class="div-of-nav">
+    <div class="div-of-nav" style="z-index: 10000;">
         <nav class="navs1 navbar-fixed-top">
             <div class="new-navs1">
                 <a href="index.html"><img src="images/welogonobag.png" class="logo1" alt=""></a>
@@ -74,6 +74,7 @@
     <div id="home">
         <div class="donate-bg-container">
             <h1 class="donate-heading" data-aos="zoom-in">Gallery</h1>
+<<<<<<< HEAD
             <p class="donate-para" data-aos="fade-right">At Tula Subhash Welfare Society, we are committed to making a
                 positive impact in the world. Through our various programs and initiatives, we strive to create a
                 brighter future for those in need. Our gallery is a collection of photos and videos that capture the
@@ -95,6 +96,26 @@
                     </div>
                     <div id="image-container" class="row portfolio-container rowgal">
                         <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+=======
+            <p class="donate-para" data-aos="fade-right">At Tula Subhash Welfare Society, we are committed to making a positive impact in the world. Through our various programs and initiatives, we strive to create a brighter future for those in need. Our gallery is a collection of photos and videos that capture the heart of our mission and the work that we do.</p>
+        </div>
+    </div>
+
+<style>
+    .portfolio {
+        padding-top: 60px;
+    }
+</style>
+
+<section id="portfolio" class="portfolio">
+
+    <div class="containergallery" style="padding-inline: 60px;" >
+       <div class="section-title">
+       
+       </div>
+       <div class="row portfolio-container rowgal">
+            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+>>>>>>> ebb877465cedb7d4ae0ec17d63e2dfed5bb9a46f
                 <div class="portfolio-wrap" data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-delay="100">
                     <img src="images/1.jpeg" width="300" height="300" class="img-fluid1" >
                 </div>
@@ -171,8 +192,104 @@
             </div>
         </section>
 
+<<<<<<< HEAD
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>AOS.init();</script>
+=======
+ </div>
+    </div>
+
+</section>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>    
+<script>AOS.init();</script> 
+
+<script> src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init(
+    {offset: 120,
+    duration:1000,
+    once:false,
+    mirror:false}
+  );
+  const slidedonate = document.querySelector(".slidedonate");
+          slidedonate.onmousemove = function(e) 
+          {
+              const x=e.pageX - slidedonate.offsetLeft;
+              const y=e.pageY - slidedonate.offsetTop;
+
+              slidedonate.style.setProperty('--x', x+'px');
+              slidedonate.style.setProperty('--y', y+'px');
+          }
+</script>
+<script src="navbar.js"></script>
+
+
+<script>
+    var loader = document.getElementById("preloader");
+    window.addEventListener("load", function()
+    {
+        loader.style.display="none";
+    } )
+</script>
+
+<div class="">
+    <button onclick="" id = "whatsapp" ><i class="fab fa-whatsapp" aria-hidden="true"></i></button>
+                    
+<button onclick="topFunction()" id = "topbtn" ><i class="fa fa-chevron-up" aria-hidden="true"></i></button>
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+crossorigin="anonymous"></script>
+<!-- navbar animation -->
+
+<script>
+
+$(document).ready(function () {
+  $(window).scroll(function () {
+  if(window.innerWidth>770){
+if ($(window).scrollTop() > 60) {
+ $('.my-navbar').addClass('navbar-scroll');
+ }
+else {
+ $('.my-navbar').removeClass('navbar-scroll');
+ }
+}
+ });
+
+});
+
+</script>
+
+<!--back to top btn-->
+
+<script type="text/javascript">
+
+myButton = document.getElementById("topbtn");
+
+whatsappBtn = document.getElementById("whatsapp");
+
+window.onscroll = function() {scrollfunction()};
+
+function scrollfunction() {
+
+    if(document.body.scrollTop  > 40 || document.documentElement.scrollTop > 40) {
+
+        myButton.style.display = "Block";
+
+        whatsappBtn.style.display = "Block";
+                    } else {
+
+                        myButton.style.display = "none";
+
+                        whatsappBtn.style.display = "none";
+>>>>>>> ebb877465cedb7d4ae0ec17d63e2dfed5bb9a46f
 
         <script> src = "https://unpkg.com/aos@next/dist/aos.js" ></script>
         <script>
@@ -270,6 +387,7 @@
 
                 document.documentElement.scrollTop = 0;
 
+<<<<<<< HEAD
             }
 
         </script>
@@ -322,6 +440,46 @@
                     </div>
 
                 </div>
+=======
+</script>
+</div>
+</body>
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+          <div class="col-lg-2 col-md-6 col-12 footer-col">
+            <img  class="footer-logo" src="images/welogonobag.png" alt="">
+          </div>
+          <div class="footer-col col-lg-3 col-md-6 col-12">
+            <h4>TULA SUBHASH WELFARE SOCIETY</h4>
+            <div class="underline"></div>
+             <ul>
+              <li><a href="#">Tula Subash Welfare Society is a non-governmental organization (NGO) with a vision to improve the quality of life for underprivileged communities and promote sustainable development.</a></li>
+             </ul>
+  
+        </div>
+        <div class="col-lg-2 col-md-4 col-12 footer-col">
+          <h4>Navigation</h4>
+          <div class="underline"></div>
+          <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="aboutuspage.html">About Us</a></li>
+              <li><a href="donatepage.html">Donate</a></li>
+              <li><a href="contactpage.html">Contact Us</a></li>
+              <li><a href="eventspage.html">Events</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+          </ul>
+      </div>
+            <div class="col-lg-3 col-md-4 col-12 footer-col">
+                <h4>Contact Us</h4>
+                <div class="underline"></div>
+                <ul>
+                    <li><a href="#">4486 richards avenue,</a></li>
+                    <li><a href="#">modesto ca - 95354</a></li>
+                    <li><a href="#">94XXXXXXXX46</a></li>
+                    <li><a href="#">1234@gmail.com</a></li>
+                </ul>
+>>>>>>> ebb877465cedb7d4ae0ec17d63e2dfed5bb9a46f
             </div>
 
 
@@ -354,6 +512,7 @@
 
         </footer>
     </div>
+<<<<<<< HEAD
     <script>
         // import app from "./config";
         // import { getFirestore } from "firebase/firestore";
@@ -369,6 +528,53 @@
     <script type="module" src="./index.js" defer>
     </script>
 </body>
+=======
+  
+  
+      <div class="row d-flex align-items-center">
+      
+      <div class="col-md-7 col-lg-8 text-center text-md-start">
+  
+      </div>
+      
+      <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+      
+        <a
+           class="btn btn-outline-light btn-floating m-1"
+           class="text-white"
+           role="button"
+           ><i class="bi bi-facebook"></i></a>
+      
+      
+        <a
+           class="btn btn-outline-light btn-floating m-1"
+           class="text-white"
+           role="button"
+           ><i class="bi bi-twitter"></i></a>
+       <a
+           class="btn btn-outline-light btn-floating m-1"
+           class="text-white"
+           role="button"
+           ><i class="bi bi-linkedin"></i></a>
+      
+        <a
+           class="btn btn-outline-light btn-floating m-1"
+           class="text-white"
+           role="button"
+           ><i class="bi bi-discord"></i></a>
+      
+        <a
+           class="btn btn-outline-light btn-floating m-1"
+           class="text-white"
+           role="button"><i class="bi bi-instagram"></i></a>
+      </div>
+      
+      </div>
+   
+    
+  </footer>
+
+>>>>>>> ebb877465cedb7d4ae0ec17d63e2dfed5bb9a46f
 
 
 <p style="color: #d0c1c1; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; background-color: #212529; padding: 5px;"
