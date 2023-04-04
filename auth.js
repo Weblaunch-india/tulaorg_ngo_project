@@ -1,4 +1,21 @@
-const auth = firebase.auth()
+import { initializeApp } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js";
+// import { getAuth } from 'https://www.gstatic.com/firebasejs/9.19.1/firebase-auth.js'
+import { getFirestore, collection, getDocs } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-firestore.js";
+
+console.log("temp");
+
+const firebaseConfig = {
+	apiKey: "AIzaSyD5mcdC10TzHK12okUM0LzO7LJI9crVoro",
+	authDomain: "tulaproject.firebaseapp.com",
+	projectId: "tulaproject",
+	storageBucket: "tulaproject.appspot.com",
+	messagingSenderId: "454315988753",
+	appId: "1:454315988753:web:96c933cdc419744f4f1eb0",
+};
+
+// const app = initializeApp(firebaseConfig);
+
+const auth = getAuth()
 const database = firebase.database()
 
 // Set up our register function
