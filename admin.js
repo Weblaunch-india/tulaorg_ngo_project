@@ -4,7 +4,9 @@ import {
 	getFirestore,
 	collection,
 	getDocs,
+	deleteDoc,
 	addDoc,
+    doc
 } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-firestore.js";
 import {
 	getStorage,
@@ -112,39 +114,48 @@ async function myfunction(selectedFile) {
 }
 
 const imgContainer = document.getElementById("image-container");
+let id = "";
 
 async function getImages() {
 	const querySnapshot = await getDocs(collection(db, "images"));
 
 	querySnapshot.forEach((doc) => {
-		console.log(doc.data());
+		// console.log(doc.id,doc.data());
+
 		const temp = document.createElement("h1");
 		temp.innerHTML = `<div class="col-lg-4 col-md-6 portfolio-item filter-app">
-		<div class="portfolio-wrap">
+		<div class="portfolio-wrap" >
 			<img src=${doc.data().url}  width="300" height="300"  class="img-fluid1">
 
 		</div>
 
-        <button class="myBtn" >Delete </button >
+        <button class="myBtn" data-post=${doc.id} >Delete </button >
         </div>
 `;
 		// temp.innerHTML = doc.data().url;
 		imgContainer.appendChild(temp);
 	});
 
-	document
-		.querySelectorAll(".myBtn")
-		.forEach((btn) => btn.addEventListener("click", (e) => (modal.style.display = "block")));
+	document.querySelectorAll(".myBtn").forEach((btn) =>
+		btn.addEventListener("click", (e) => {
+			modal.style.display = "block";
+			// console.log(e);
+			id = e.target.dataset.post;
+		})
+	);
 }
 
 getImages();
 
 let testpassword = "";
 
-function deleteImage() {
+async function deleteImage() {
 	// alert("ASDWADS");
 	if (testpassword == password) {
-		alert("true");
+		// alert(id);
+		await deleteDoc(doc(db, "images", id));
+		console.log();
+		location.reload();
 	} else {
 		alert("false");
 	}
@@ -156,7 +167,7 @@ document.getElementById("input-password").addEventListener("click", (e) => {
 
 document.getElementById("current-password").addEventListener("keyup", (e) => {
 	testpassword = e.target.value;
-    console.log(testpassword);
+	console.log(testpassword);
 });
 
 console.log(imgContainer);
