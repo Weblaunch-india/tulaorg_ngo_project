@@ -27,7 +27,7 @@
         Current Images container
     </div>
     
-    <button id="myBtn">Open Modal</button>
+    <!-- <button class="myBtn">Open Modal</button> -->
     
     <!-- The Modal -->
     <div id="myModal" class="modal">
@@ -37,10 +37,15 @@
             <div>
                 <span class="close">&times;</span>
                 <p>Some text in the Modal..</p>
-                <input type="password" />
-                <button onclick="SubmitEvent()">Submitasdasd</button>
+                <input type="password" id="current-password"/>
+                <!-- <button onclick="SubmitEvent()" id="input-password">Submit</button> -->
+                <button id="input-password">Submit</button>
+
             </div>
         </div>
+        
+    </div>
+    <div  id="image-container">
         
     </div>
     <script type="module" src="admin.js"></script>

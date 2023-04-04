@@ -1,6 +1,11 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js";
 // import { getAuth } from 'https://www.gstatic.com/firebasejs/9.19.1/firebase-auth.js'
-import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-firestore.js";
+import {
+	getFirestore,
+	collection,
+	getDocs,
+	addDoc,
+} from "https://www.gstatic.com/firebasejs/9.19.1/firebase-firestore.js";
 import {
 	getStorage,
 	ref,
@@ -20,19 +25,42 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 const storage = getStorage(app);
+const password = "testing";
 
 var modal = document.getElementById("myModal");
 
 // Get the button that opens the modal
-var btn = document.getElementById("myBtn");
+var btn = document.getElementsByClassName("myBtn");
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
+console.log(btn);
 // When the user clicks on the button, open the modal
-btn.onclick = function () {
+// if (0 != btn) {
+// 	btn.forEach(
+// 		(elem) =>
+// 			(elem.onclick = function () {
+// 				modal.style.display = "block";
+// 			})
+// 	);
+// }
+
+// if (btn[0]) {
+// 	btn[0].onclick = () => {
+// 		modal.style.display = "block";
+// 	};
+// }
+
+function displayModel() {
 	modal.style.display = "block";
-};
+}
+
+// for (let i = 0; i < btn.length; i++) {
+// 	btn[i].addEventListener("click", (e) => {
+// 		modal.style.display = "block";
+// 	});
+// }
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function () {
@@ -48,21 +76,19 @@ window.onclick = function (event) {
 
 const uploadBtn = document.getElementById("image-upload-btn");
 
-console.log(uploadBtn);
+// console.log(uploadBtn);
+
 uploadBtn.addEventListener("click", (e) => {
-	console.log("Asdf");
 	getfile();
 });
 
 async function getfile() {
-	console.log("ASDAWDQ");
 	var pic = document.getElementById("photo");
 
 	// selected file is that file which user chosen by html form
 	const selectedFile = pic.files[0];
 
 	// make save button disabled for few seconds that has id='submit_link'
-	// document.getElementById("submit_link").setAttribute("disabled", "true");
 	myfunction(selectedFile); // call below written function
 }
 
@@ -83,37 +109,54 @@ async function myfunction(selectedFile) {
 			console.log("Document written with ID: ", docRef.id);
 		});
 	});
-
-	// uploadTask.on(
-	// 	"state_changed",
-	// 	(snapshot) => {
-	// 		// Observe state change events such as progress, pause, and resume
-	// 		// Get task progress, including the number of bytes uploaded and the total number of bytes to be uploaded
-	// 		const progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
-	// 		console.log("Upload is " + progress + "% done");
-	// 		switch (snapshot.state) {
-	// 			case "paused":
-	// 				console.log("Upload is paused");
-	// 				break;
-	// 			case "running":
-	// 				console.log("Upload is running");
-	// 				break;
-	// 		}
-	// 	},
-	// 	(error) => {
-	// 		// Handle unsuccessful uploads
-	// 	},
-	// 	() => {
-	// 		// Handle successful uploads on complete
-	// 		// For instance, get the download URL: https://firebasestorage.googleapis.com/...
-	// 		getDownloadURL(uploadTask.snapshot.ref).then(async (downloadURL) => {
-	// 			const docRef = await addDoc(collection(db, "images"), {
-	// 				url: downloadURL,
-	// 			});
-	// 			console.log("Document written with ID: ", docRef.id);
-	// 		});
-	// 	}
-	// );
 }
 
-console.log("ASDF");
+const imgContainer = document.getElementById("image-container");
+
+async function getImages() {
+	const querySnapshot = await getDocs(collection(db, "images"));
+
+	querySnapshot.forEach((doc) => {
+		console.log(doc.data());
+		const temp = document.createElement("h1");
+		temp.innerHTML = `<div class="col-lg-4 col-md-6 portfolio-item filter-app">
+		<div class="portfolio-wrap">
+			<img src=${doc.data().url}  width="300" height="300"  class="img-fluid1">
+
+		</div>
+
+        <button class="myBtn" >Delete </button >
+        </div>
+`;
+		// temp.innerHTML = doc.data().url;
+		imgContainer.appendChild(temp);
+	});
+
+	document
+		.querySelectorAll(".myBtn")
+		.forEach((btn) => btn.addEventListener("click", (e) => (modal.style.display = "block")));
+}
+
+getImages();
+
+let testpassword = "";
+
+function deleteImage() {
+	// alert("ASDWADS");
+	if (testpassword == password) {
+		alert("true");
+	} else {
+		alert("false");
+	}
+}
+
+document.getElementById("input-password").addEventListener("click", (e) => {
+	deleteImage();
+});
+
+document.getElementById("current-password").addEventListener("keyup", (e) => {
+	testpassword = e.target.value;
+    console.log(testpassword);
+});
+
+console.log(imgContainer);
