@@ -1,12 +1,13 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js";
 // import { getAuth } from 'https://www.gstatic.com/firebasejs/9.19.1/firebase-auth.js'
 import {
+	updateDoc,
 	getFirestore,
 	collection,
 	getDocs,
 	deleteDoc,
 	addDoc,
-    doc
+	doc,
 } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-firestore.js";
 import {
 	getStorage,
@@ -30,14 +31,12 @@ const storage = getStorage(app);
 const password = "testing";
 
 var modal = document.getElementById("myModal");
-
+var updateModal = document.getElementById("updateModal");
 // Get the button that opens the modal
 var btn = document.getElementsByClassName("myBtn");
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
-
-console.log(btn);
 
 function displayModel() {
 	modal.style.display = "block";
@@ -53,9 +52,28 @@ window.onclick = function (event) {
 	if (event.target == modal) {
 		modal.style.display = "none";
 	}
+	if (event.target == updateModal) {
+		updateModal.style.display = "none";
+	}
 };
 
 const uploadBtn = document.getElementById("image-upload-btn");
+
+let titleCont = document.getElementById("input-title");
+let contentCont = document.getElementById("input-content");
+
+let title = "";
+let content = "";
+
+titleCont.addEventListener("keyup", (e) => {
+	title = e.target.value;
+	console.log(title);
+});
+
+contentCont.addEventListener("keyup", (e) => {
+	content = e.target.value;
+	console.log(content);
+});
 
 uploadBtn.addEventListener("click", (e) => {
 	getfile();
@@ -67,11 +85,10 @@ async function getfile() {
 	// selected file is that file which user chosen by html form
 	const selectedFile = pic.files[0];
 
-	// make save button disabled for few seconds that has id='submit_link'
-	myfunction(selectedFile); // call below written function
+	myfunction(selectedFile, title, content); // call below written function
 }
 
-async function myfunction(selectedFile) {
+async function myfunction(selectedFile, title, content) {
 	// select unique name for everytime when image uploaded
 	// Date.now() is function that give current timestamp
 	var name = "tula" + Date.now();
@@ -82,8 +99,10 @@ async function myfunction(selectedFile) {
 	uploadBytesResumable(storageRef, selectedFile).then(async (snapshot) => {
 		console.log("Uploaded a blob or file!");
 		getDownloadURL(snapshot.ref).then(async (downloadURL) => {
-			const docRef = await addDoc(collection(db, "images"), {
+			const docRef = await addDoc(collection(db, "events"), {
 				url: downloadURL,
+				title: title,
+				content: content,
 			});
 			console.log("Document written with ID: ", docRef.id);
 		});
@@ -95,24 +114,35 @@ const imgContainer = document.getElementById("image-container");
 let id = "";
 
 async function getImages() {
-	const querySnapshot = await getDocs(collection(db, "images"));
+	const querySnapshot = await getDocs(collection(db, "events"));
 
 	querySnapshot.forEach((doc) => {
 		// console.log(doc.id,doc.data());
 
 		const temp = document.createElement("h1");
-		temp.innerHTML = `<div class="col-lg-4 col-md-6 portfolio-item filter-app">
+		temp.innerHTML = `<div class="col-lg-4 col-md-6 portfolio-item text-sm filter-app">
 		<div class="portfolio-wrap" >
-			<img src=${doc.data().url}  width="300" height="300"  class="img-fluid1">
-
+			<h3 id="${doc.id}-title">${doc.data().title}</h3>
+			<p id="${doc.id}-content">${doc.data().content}</p>
 		</div>
 
+        <button class="update-open" id="update-events" data-update="true" data-post=${doc.id} >Update</button >
         <button class="myBtn" data-post=${doc.id} >Delete </button >
         </div>
 `;
 		// temp.innerHTML = doc.data().url;
 		imgContainer.appendChild(temp);
 	});
+
+	document.querySelectorAll(".update-open").forEach((btn) =>
+		btn.addEventListener("click", (e) => {
+			updateModal.style.display = "block";
+			// console.log(e);
+			id = e.target.dataset.post;
+			document.getElementById(`updated-title`).value = document.getElementById(`${id}-title`).innerText;
+			document.getElementById(`updated-content`).value = document.getElementById(`${id}-content`).innerText;
+		})
+	);
 
 	document.querySelectorAll(".myBtn").forEach((btn) =>
 		btn.addEventListener("click", (e) => {
@@ -128,11 +158,10 @@ getImages();
 let testpassword = "";
 
 async function deleteImage() {
-	// alert("ASDWADS");
 	if (testpassword == password) {
 		// alert(id);
 		await deleteDoc(doc(db, "images", id));
-		console.log();
+		// testpassword = "";
 		location.reload();
 	} else {
 		alert("false");
@@ -149,3 +178,18 @@ document.getElementById("current-password").addEventListener("keyup", (e) => {
 });
 
 console.log(imgContainer);
+
+async function updateEvent() {
+	const washingtonRef = doc(db, "events", id);
+
+	// Set the "capital" field of the city 'DC'
+	await updateDoc(washingtonRef, {
+		title: document.getElementById(`updated-title`).value,
+		content: document.getElementById(`updated-content`).value,
+	});
+	location.reload();
+}
+
+document.getElementById("input-update-password").addEventListener("click", (e) => {
+	updateEvent();
+});

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Login + Firebase Database</title>
+    <!-- Cool Google Fonts -->
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap" rel="stylesheet">
+    Our stylesheet -->
+
+    <!-- <type="stylesheet" href="admin.css"> -->
+    <link rel="stylesheet" type="text/css" href="admin.css">
+</head>
+
+
+<body>
+    <div id="upload-image-container">
+        <input input="text" id="input-title" />
+        <input type="text" id="input-content" />
+        <input type="file" id="photo" accept="image/png , image/jpeg , image/webp , image/ai , image/jpg ">
+        <button id="image-upload-btn">Upload</button>
+    </div>
+
+    <div>
+        Current Images container
+    </div>
+
+    <!-- <button class="myBtn">Open Modal</button> -->
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div>
+                <span class="close">&times;</span>
+                <p>Some text in the Modal..</p>
+                <input type="password" id="current-password" />
+                <!-- <button onclick="SubmitEvent()" id="input-password">Submit</button> -->
+                <button id="input-password">Submit</button>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div id="updateModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div>
+                <span class="close">&times;</span>
+                <p>Some text in the Modal..</p>
+                <input id="updated-title" value="" />
+                <input id="updated-content" value="" /> 
+
+                <input type="password" id="current-update-password" />
+                <!-- <button onclick="SubmitEvent()" id="input-password">Submit</button> -->
+                <button id="input-update-password">Submit</button>
+
+            </div>
+        </div>
+
+    </div>
+    <div id="image-container">
+
+    </div>
+    <script type="module" src="events-edit.js"></script>
+    <!-- <script type="module">console.log("ASD")</script> -->
+</body>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+
+<!-- Our script must be loaded after firebase references -->
+<!-- <script src="auth.js"></script> -->
+
+</html>

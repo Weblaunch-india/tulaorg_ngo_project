@@ -1,299 +1,375 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TSWS</title>
+    <link rel="stylesheet" href="index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-         <!-- Bootstrap Font Icon CSS -->
-         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>   
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-     <link rel="stylesheet" href="index.css">
-     <link rel="shortcut icon" type="x-icon" href="https://res.cloudinary.com/dgrm3sqpp/image/upload/v1675782525/TSWSICON.PNG_d9ec33.jpg">
-     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="shortcut icon" type="x-icon" href="images/tsws.png">
 </head>
-<body>
-    
-        <div id="preloader"></div>
-    <div class="div-of-nav" style="z-index: 10000;">
+
+<body style="font-family: arimo;">
+    <script type="module" src="events.js"></script>
+    <div id="preloader"></div>
+    <div class="div-of-nav">
         <nav class="navs1 navbar-fixed-top">
             <div class="new-navs1">
-              <a href="index.html"><img src="images/welogonobag.png" class="logo1" alt=""></a>
-              <h2 class="span1 logo12">TULA SUBHASH WELFARE SOCIETY</h2>
+                <a href="index.html"><img src="images/welogonobag.png" class="logo1" alt=""></a>
+                <h2 class="span1 logo12">TULA SUBHASH WELFARE SOCIETY</h2>
             </div>
             <div class="navhide">
-            <ul class="ul-nav1">
-                <li class="li1"><a href="index.html"  class="ul-content1">Home</a></li>
-                <li class="li1"><a href="aboutuspage.html"  class="ul-content1">About us</a></li>
-                <li class="li1"><a href="gallery.html"  class="ul-content1">Gallery</a></li>
-                <li class="li1"><a href="eventspage.html"  class="ul-content1">Events</a></li>
-                <li class="li1"><a href="contactpage.html"  class="ul-content1">Contact</a></li>
-                <button class="button1 slidedonate"><span><a class="nav-donate" href="donatepage.html">Donate</a></span></button>
-            </ul>
+                <ul class="ul-nav1">
+                    <li class="li1"><a href="index.html" class="ul-content1">Home</a></li>
+                    <li class="li1"><a href="aboutuspage.html" class="ul-content1">About us</a></li>
+                    <li class="li1"><a href="gallery.html" class="ul-content1">Gallery</a></li>
+                    <li class="li1"><a href="eventspage.html" class="ul-content1">Events</a></li>
+                    <li class="li1"><a href="contactpage.html" class="ul-content1">Contact</a></li>
+                    <button class="button1 slidedonate"><span><a class="nav-donate"
+                                href="donatepage.html">Donate</a></span></button>
+                </ul>
             </div>
-          
-          <img onclick="show_hide()" src="images/burger.jpg" alt="hamburger" class="nav-hamburger">
+
+            <img onclick="show_hide()" src="images/burger.jpg" alt="hamburger" class="nav-hamburger">
         </nav>
     </div>
 
     <div id="home">
-    <div class="donate-bg-container">
-        <h1 class="donate-heading" data-aos="zoom-in">Donate To Help</h1>
-        <p class="donate-para" data-aos="fade-right">Let's Make a Change Together! <br>
-            The greatest use of a life is to spend it on something that will outlast it. <br>
-            Any help or donation, <br>
-            no matter how big or small, <br>
-            will be whole-heartedly and deeply appreciated.</p>
-    </div>
-    </div>
-    <div class="second-section1">
-        <div class="second-section-part1">
-            <div data-aos="fade-right">
-            <h1 class="part1-heading1" >HELP US!</h1>
-            </div >
-            <div data-aos="zoom-in">
-            <p class="part1-para1" >The donation page of Tula Subash Welfare Society is a platform for individuals to support the organization's mission of empowering communities and transforming lives. Through their generosity, donors can help the organization to continue its important work and make a positive impact on the lives of underprivileged communities and individuals. <br>
-                By making a donation, individuals can directly support the organization's programs and initiatives, which include education, health and wellness, economic empowerment, and environmental sustainability. Donors can choose to make a one-time gift, or set up a recurring donation to provide ongoing support for the organization's work. <br>
-                Your contribution can make a real difference in the lives of those who need it the most. We invite you to visit our donation page and help us continue our mission of empowering communities and transforming lives. Thank you for your support!
-                </p>
-            </div>
+        <div class="donate-bg-container">
+            <h1 class="donate-heading" data-aos="zoom-in">Events</h1>
+            <p class="donate-para" data-aos="fade-right">Our events are a great opportunity to get involved and support
+                our mission. Whether you want to volunteer your time, make a donation, or simply learn more about the
+                work that we do, there is an event for everyone. Our events are a chance to come together with
+                like-minded individuals and work towards a common goal: creating a better world for all.</p>
         </div>
-        <div class="second-section-part1">
-            <div data-aos="fade-right">
-            <h1 class="part1-heading1" >WAYS TO DONATE!</h1>
+        <div id="event-container" class="container1">
+            <!-- <div class="blog-post" data-aos="fade-up">
+                <div class="blog-post_img">
+                    <img src="images/image1.jpg" alt="image" class="image1">
+
+                </div>
+                <div class="blog-post_info">
+                    <div class="blog-post_date">
+                        <span>Providing aid to the underprivileged</span>
+                        <span>26-dec-2022.</span>
+                    </div>
+                    <h1 class="blog-post_title">Description</h1>
+                    <p class="blog-post_text">On Monday, Tula Arun Kumar, the chairman of the Tula Subhash Welfare
+                        Organization, went to the Bazar Hatnoor Mandal village of Gokonda to identify the lonely and
+                        poor elderly residents there and to demonstrate humanity by giving them supplies. He has been
+                        participating in numerous volunteer projects through the Tula Subhash Welfare Society for the
+                        past few years, and the village's youth invited him to visit at their request. Vice MPP Poreddy
+                        Srinivas, who spoke at the event, praised Tula Arun Kumar for all of the charitable work he is
+                        doing on behalf of the Tula Subhash Welfare Society.
+                        Among those who took part in this programme were Sarpanch Rukmini Jangu, ITDA Director Mesram
+                        Bhumanna, Bakri Ramesh, Ganesh, and young people from the village
+                    </p>
+                </div>
             </div>
-            <div data-aos="zoom-in">
-            <p class="part1-para1" >Online Donation: Donors can make a secure online donation through the organization's website using a credit card, debit card, or electronic fund transfer. <br>
-                Monthly Giving: Donors can set up a recurring monthly donation to provide ongoing support for the organization's work. <br>
-                Corporate Sponsorship: Companies and businesses can support Tula Subash Welfare Society by making a corporate sponsorship or by participating in the organization's corporate giving program. <br>      
-                Event Participation: Donors can support the organization by participating in its events, such as charity walks, galas, and auctions. <br>
-                In-Kind Donations: Donors can support the organization by making in-kind donations of goods, services, or supplies. <br>
-                Tula Subash Welfare Society is grateful for any support, no matter the size, and is committed to using its resources efficiently and effectively to make the greatest possible impact. If you have any questions about making a donation, please contact the organization's office.
-                </p>
-            </div>        
-        </div>
-        <div class="second-section-part1">
-            <div data-aos="fade-right">
-            <h1 class="part1-heading1" >TRACK YOUR DONATIONS!</h1>
+
+            <div class="blog-post" data-aos="fade-up">
+                <div class="blog-post_img">
+                    <img src="images/image3.jpg" alt="image" class="image1">
+
+                </div>
+                <div class="blog-post_info">
+                    <div class="blog-post_date">
+                        <span>Distribution of blankets under the auspices of Tula Subhash Welfare Society..</span>
+                        <span>12-jan-2023</span>
+                    </div>
+                    <h1 class="blog-post_title">Description</h1>
+                    <p class="blog-post_text">For the benefit of the local SC colony of Sonala, Tula Subhash Welfare
+                        Organization
+                        launched a blanket distribution campaign. The main guest at the programme to distribute blankets
+                        was Tula Ajay Kumar.
+                        The women were appreciated by the elderly for setting up the blanket distribution initiative to
+                        keep them warm. Amrit Rao Patil,
+                        director of the Agricultural Market Committee, Joshna Santosh, Chetlapelli Sudhir Kumar, local
+                        youth Bhimrao Patil,
+                        B. Ravinder, and Laxman, as well as other women and senior citizens, took part in this activity.
+                    </p>
+                </div>
             </div>
-            <div data-aos="zoom-in">
-            <p class="part1-para1" data-aos="zoom-in">No matter how you choose to donate, it’s important to keep track of your donations for tax purposes. Most organizations will provide you with a receipt for your donation so that you can easily document it for tax season.<br>  Donating is a great way to give back and make a difference in your community. Do your research beforehand and make sure you’re donating to a reputable organization so that your money is going towards a good cause!</p>
+
+            <div class="blog-post" data-aos="fade-up">
+                <div class="blog-post_img">
+                    <img src="images/image4.jpg" alt="image" class="image1">
+
+                </div>
+                <div class="blog-post_info">
+                    <div class="blog-post_date">
+                        <span>Tula Arun visited the victim's family</span>
+                        <span>26-dec-2022</span>
+                    </div>
+                    <h1 class="blog-post_title">Description</h1>
+                    <p class="blog-post_text">After learning of Gevande Rama's passing in the Bazar Hatnoor mandal's
+                        Gokonda hamlet, Tula Arun Kumar, a State Advisory Member of the International Human Rights
+                        Organization Committee, paid them a visit on Monday. There were questions about what happened
+                        and why. Subsequently, he made a request for the doctors at the primary health centre near the
+                        mandal centre where the incident had occurred. Furthermore, the health center's amenities and
+                        issues were noted. According to him, the delivery is being delayed even though there are legs in
+                        the medical facility. Additionally, he pledged to bring this occurrence to the commission's
+                        notice and see that justice was served. He attended this programme alongside Vice MPP Poreddy
+                        Srinivas and Mesram Bhumanna.</p>
+                </div>
             </div>
+
+            <div class="blog-post" data-aos="fade-up">
+                <div class="blog-post_img">
+                    <img src="images/image6.jpg" alt="image" class="image1">
+
+                </div>
+                <div class="blog-post_info">
+                    <div class="blog-post_date">
+                        <span>Request for road repair</span>
+                        <span>26 Dec 2022</span>
+                    </div>
+                    <h1 class="blog-post_title">Description</h1>
+                    <p class="blog-post_text">The main road going to Gokonda village has been swept away due to heavy
+                        rains, making it perilous, and Tula Arun Kumar told the R&B Department via Twitter that this is
+                        the cause of the students and locals' extreme troubles. Also, he declared that he would make a
+                        written request.
+                        Participants in this session included Sarpanch Rukmini Jangu, Itda Director Mesram Bhumanna,
+                        Bakri Ramesh, Ganesh, village youth, and others.
+                    </p>
+                </div>
+            </div>
+
+            <div class="blog-post" data-aos="fade-up">
+                <div class="blog-post_img">
+                    <img src="images/image7.jpg" alt="image" class="image1">
+
+                </div>
+                <div class="blog-post_info">
+                    <div class="blog-post_date">
+                        <span>Independence Day celebrations by Tula Arun Kumar with kids</span>
+                        <span>15 Aug 2022</span>
+                    </div>
+                    <h1 class="blog-post_title">Description</h1>
+                    <p class="blog-post_text">In celebration of the 75th Independence Day, school bags were distributed
+                        to about 150 students of Darampuri, Sarpanch Guda and Tukan Pally villages of Bazar Hatnoor
+                        Mandal under the auspices of Tula Subhash Welfare Society with the support of Aham Prana
+                        Society.On this occasion, Tula Arun Kumar said that with the aim of increasing the educational
+                        standards of the students in the tribal areas and supporting their educational development,
+                        various materials are being provided to the students and school bags have been distributed as a
+                        part of it.Similarly, Vice MPP Poreddy Srinivas said that for the past 15 years under the
+                        auspices of Tula Subhash Welfare Society, they have provided career guidance to students as well
+                        as smart TVs and other equipment to various schools, and said that their service during the
+                        Corona period is immeasurable. Darampuri Sarpanch Arka Kavitha Yadav, Gram Patel Nandev,
+                        Panchayat Secretary Srinivas, Degama Lo Chairman Jangu, youths Srikanth, Prashant, Naresh, Raju,
+                        Akhil, Rakesh and others participated in this program.</p>
+                </div>
+            </div>
+
+            <div class="blog-post" data-aos="fade-up">
+                <div class="blog-post_img">
+                    <img src="images/image4.jpg" alt="image" class="image1">
+
+                </div>
+                <div class="blog-post_info">
+                    <div class="blog-post_date">
+                        <span>Distributing blankets and sweaters to tribal members with the assistance of the Ahamprana
+                            Foundation</span>
+                        <span>24 Dec 2021</span>
+                    </div>
+                    <h1 class="blog-post_title">Description</h1>
+                    <p class="blog-post_text">Due to the increasing cold in Adilabad district day by day, the popular
+                        voluntary organization Aham Foundation, with the help of Tula Subhash Welfare Society Chairman
+                        Tula Arun Kumar, is helping the people of his own mandal in the neighboring villages of Vajjar
+                        Gram Panchayat, a remote village panchayat of Bhot mandal where the tribal people live. Blankets
+                        were distributed to more than 150 elderly people and sweaters to small children.Tula Subhash
+                        Welfare Society Chairman Tula Arun Kumar Garu said that I have provided such assistance to the
+                        people living in tribal villages and will organize more social service programs in the future.
+                        ITDA Director Mesram Bhumanna, Aham Prana Foundation management members Praveen, Nani, Raju,
+                        Sarpanchs, Upasarpanchs of the respective villages were present in this program. Leaders and
+                        Allamkonda Potanna, Bore Ravi, Pratap Singh and others participated.</p>
+                </div>
+            </div> -->
+
+
         </div>
 
-        <div class="phonepe-div" data-aos="fade-up">
-            <h1 class="part1-heading1">Donation Section</h1>
-            <h1 style="padding: 20px;" class="part1-heading1">PhonePe/GPay No: +91 92XXXXXXXX64</h1>
-            <p style="  font-size: 30px;"class="phonepe-para">Scan this to pay via PhonePe</p>
-            <img style="margin-bottom:190px;"class="phonepe-img" data-aos="zoom-in" src="https://bizglide.in/images/pay/phone-pe.jpg" alt="">
-        </div>
-    </div>
-
-
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script>
-          AOS.init(
-            {offset: 120,
-            duration:1000,}
-          );
-          </script>
-          <script>
-          const slidedonate = document.querySelector(".slidedonate");
-                  slidedonate.onmousemove = function(e) 
-                  {
-                      const x=e.pageX - slidedonate.offsetLeft;
-                      const y=e.pageY - slidedonate.offsetTop;
-        
-                      slidedonate.style.setProperty('--x', x+'px');
-                      slidedonate.style.setProperty('--y', y+'px');
-                  }
+            AOS.init(
+                {
+                    offset: 120,
+                    duration: 1000,
+                    once: false,
+                    mirror: false
+                }
+            );
+            const slidedonate = document.querySelector(".slidedonate");
+            slidedonate.onmousemove = function (e) {
+                const x = e.pageX - slidedonate.offsetLeft;
+                const y = e.pageY - slidedonate.offsetTop;
+
+                slidedonate.style.setProperty('--x', x + 'px');
+                slidedonate.style.setProperty('--y', y + 'px');
+            }
         </script>
-        <script src="navbar.js"></script>
         <script>
             var loader = document.getElementById("preloader");
-            window.addEventListener("load", function()
-            {
-                loader.style.display="none";
-            } )
+            window.addEventListener("load", function () {
+                loader.style.display = "none";
+            })
+        </script>
+        <script src="navbar.js"></script>
+
+        <div class="">
+            <button onclick="" id="whatsapp"><i class="fab fa-whatsapp" aria-hidden="true"></i></button>
+
+            <button onclick="topFunction()" id="topbtn"><i class="fa fa-chevron-up" aria-hidden="true"></i></button>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+            integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+            crossorigin="anonymous"></script>
+        <!-- navbar animation -->
+
+        <script>
+
+            $(document).ready(function () {
+                $(window).scroll(function () {
+                    if (window.innerWidth > 770) {
+                        if ($(window).scrollTop() > 60) {
+                            $('.my-navbar').addClass('navbar-scroll');
+                        }
+                        else {
+                            $('.my-navbar').removeClass('navbar-scroll');
+                        }
+                    }
+                });
+
+            });
+
         </script>
 
-<div class="">
-    <button onclick="" id = "whatsapp" ><i class="fab fa-whatsapp" aria-hidden="true"></i></button>
-                    
-<button onclick="topFunction()" id = "topbtn" ><i class="fa fa-chevron-up" aria-hidden="true"></i></button>
-</div>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-crossorigin="anonymous"></script>
-<!-- navbar animation -->
+        <!--back to top btn-->
 
-<script>
+        <script type="text/javascript">
 
-$(document).ready(function () {
-  $(window).scroll(function () {
-  if(window.innerWidth>770){
-if ($(window).scrollTop() > 60) {
- $('.my-navbar').addClass('navbar-scroll');
- }
-else {
- $('.my-navbar').removeClass('navbar-scroll');
- }
-}
- });
+            myButton = document.getElementById("topbtn");
 
-});
+            whatsappBtn = document.getElementById("whatsapp");
 
-</script>
+            window.onscroll = function () { scrollfunction() };
 
-<!--back to top btn-->
+            function scrollfunction() {
 
-<script type="text/javascript">
+                if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
 
-myButton = document.getElementById("topbtn");
+                    myButton.style.display = "Block";
 
-whatsappBtn = document.getElementById("whatsapp");
+                    whatsappBtn.style.display = "Block";
+                } else {
 
-window.onscroll = function() {scrollfunction()};
+                    myButton.style.display = "none";
 
-function scrollfunction() {
-
-    if(document.body.scrollTop  > 40 || document.documentElement.scrollTop > 40) {
-
-        myButton.style.display = "Block";
-
-        whatsappBtn.style.display = "Block";
-                    } else {
-
-                        myButton.style.display = "none";
-
-                        whatsappBtn.style.display = "none";
-
-                    }
+                    whatsappBtn.style.display = "none";
 
                 }
 
-                function topFunction() {
+            }
 
-                    document.body.scrollTop = 0;
+            function topFunction() {
 
-                    document.documentElement.scrollTop = 0;
+                document.body.scrollTop = 0;
 
-                }
+                document.documentElement.scrollTop = 0;
 
-</script>
-</div>
+            }
+
+        </script>
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2 col-md-6 col-12 footer-col">
+                        <img class="footer-logo" src="images/welogonobag.png" alt="">
+                    </div>
+                    <div class="footer-col col-lg-3 col-md-6 col-12">
+                        <h4>TULA SUBHASH WELFARE SOCIETY</h4>
+                        <div class="underline"></div>
+                        <ul>
+                            <li><a href="#">Tula Subash Welfare Society is a non-governmental organization (NGO) with a
+                                    vision to improve the quality of life for underprivileged communities and promote
+                                    sustainable development.</a></li>
+                        </ul>
+
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-12 footer-col">
+                        <h4>Navigation</h4>
+                        <div class="underline"></div>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="aboutuspage.html">About Us</a></li>
+                            <li><a href="donatepage.html">Donate</a></li>
+                            <li><a href="contactpage.html">Contact Us</a></li>
+                            <li><a href="eventspage.html">Events</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-12 footer-col">
+                        <h4>Contact Us</h4>
+                        <div class="underline"></div>
+                        <ul>
+                            <li><a href="#">4486 richards avenue,</a></li>
+                            <li><a href="#">modesto ca - 95354</a></li>
+                            <li><a href="#">94XXXXXXXX46</a></li>
+                            <li><a href="#">1234@gmail.com</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-md-4 footer-col">
+                        <h4>Support</h4>
+                        <div class="underline"></div>
+                        <ul>
+                            <li><a href="#">help us shape a better future for children all over the world</a></li>
+                            <li><a href="donatepage.html">Donate</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+        </footer>
+    </div>
 </body>
 
-<footer class="footer">
-    <div class="container">
-        <div class="row">
-          <div class="col-lg-2 col-md-6 col-12 footer-col">
-            <img  class="footer-logo" src="images/welogonobag.png" alt="">
-          </div>
-          <div class="footer-col col-lg-3 col-md-6 col-12">
-            <h4>TULA SUBHASH WELFARE SOCIETY</h4>
-            <div class="underline"></div>
-             <ul>
-              <li><a href="#">Tula Subash Welfare Society is a non-governmental organization (NGO) with a vision to improve the quality of life for underprivileged communities and promote sustainable development.</a></li>
-             </ul>
-  
-        </div>
-        <div class="col-lg-2 col-md-4 col-12 footer-col">
-          <h4>Navigation</h4>
-          <div class="underline"></div>
-          <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="aboutuspage.html">About Us</a></li>
-              <li><a href="donatepage.html">Donate</a></li>
-              <li><a href="contactpage.html">Contact Us</a></li>
-              <li><a href="eventspage.html">Events</a></li>
-              <li><a href="gallery.html">Gallery</a></li>
-          </ul>
-      </div>
-            <div class="col-lg-3 col-md-4 col-12 footer-col">
-                <h4>Contact Us</h4>
-                <div class="underline"></div>
-                <ul>
-                    <li><a href="#">4486 richards avenue,</a></li>
-                    <li><a href="#">modesto ca - 95354</a></li>
-                    <li><a href="#">94XXXXXXXX46</a></li>
-                    <li><a href="#">1234@gmail.com</a></li>
-                </ul>
-            </div>
-            <div class="col-lg-2 col-md-4 footer-col">
-                <h4>Support</h4>
-                <div class="underline"></div>
-                <ul>
-                    <li><a href="#">help us shape a better future for children all over the world</a></li>
-                    <li><a href="donatepage.html">Donate</a></li>
-                </ul>
-            </div>
-  
-        </div>
-    </div>
-  
-  
-      <div class="row d-flex align-items-center">
-      
-      <div class="col-md-7 col-lg-8 text-center text-md-start">
-  
-      </div>
-      
-      <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
-      
-        <a
-           class="btn btn-outline-light btn-floating m-1"
-           class="text-white"
-           role="button"
-           ><i class="bi bi-facebook"></i></a>
-      
-      
-        <a
-           class="btn btn-outline-light btn-floating m-1"
-           class="text-white"
-           role="button"
-           ><i class="bi bi-twitter"></i></a>
-       <a
-           class="btn btn-outline-light btn-floating m-1"
-           class="text-white"
-           role="button"
-           ><i class="bi bi-linkedin"></i></a>
-      
-        <a
-           class="btn btn-outline-light btn-floating m-1"
-           class="text-white"
-           role="button"
-           ><i class="bi bi-discord"></i></a>
-      
-        <a
-           class="btn btn-outline-light btn-floating m-1"
-           class="text-white"
-           role="button"><i class="bi bi-instagram"></i></a>
-      </div>
-      
-      </div>
-   
-    
-  </footer>
-
-
-  <p style="color: #d0c1c1; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; background-color: #212529; padding: 5px;" align="center" class="copyright">All Rights Reserved by <strong>TSWS © 2023</strong>. Designed and developed by Weblaunch. <a href="https://weblaunch.in/" target="_blank">Weblaunch</a></p>
+<p style="color: #d0c1c1; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; background-color: #212529; padding: 5px;"
+    align="center" class="copyright">All Rights Reserved by <strong>TSWS © 2023</strong>. Designed and developed by
+    Weblaunch. <a href="https://weblaunch.in/" target="_blank">Weblaunch</a></p>
 
 </html>
