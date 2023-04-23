@@ -14,13 +14,16 @@
 
     <!-- <type="stylesheet" href="admin.css"> -->
     <link rel="stylesheet" type="text/css" href="admin.css">
+    <link rel="stylesheet" href="events-edit.css">
 </head>
 
 
 <body>
-    <div id="upload-image-container">
+    <div id="upload-image-container" class="form-upload">
+        <h3>Title</h3>
         <input input="text" id="input-title" />
-        <input type="text" id="input-content" />
+        <h3>Content</h3>
+        <input type="text" class="content-text" id="input-content" />
         <input type="file" id="photo" accept="image/png , image/jpeg , image/webp , image/ai , image/jpg ">
         <button id="image-upload-btn">Upload</button>
     </div>
