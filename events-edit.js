@@ -119,16 +119,24 @@ async function getImages() {
 	querySnapshot.forEach((doc) => {
 		// console.log(doc.id,doc.data());
 
-		const temp = document.createElement("h1");
-		temp.innerHTML = `<div class="col-lg-4 col-md-6 portfolio-item text-sm filter-app">
-		<div class="portfolio-wrap" >
-			<h3 id="${doc.id}-title">${doc.data().title}</h3>
-			<p id="${doc.id}-content">${doc.data().content}</p>
+		const temp = document.createElement("div");
+		temp.innerHTML = `<div class=" portfolio-item text-sm filter-app card text-center">
+		<div class="card-header">
+    Document ID: ${doc.id}
+  </div>
+		<div class="portfolio-wrap card-body" >
+			<h3 id="${doc.id}-title" class="card-title">${doc.data().title}</h3>
+			<p id="${doc.id}-content"  class="card-text">${doc.data().content}</p>
+			<img src="${doc.data().url}">
 		</div>
 
-        <button class="update-open" id="update-events" data-update="true" data-post=${doc.id} >Update</button >
-        <button class="myBtn" data-post=${doc.id} >Delete </button >
+		<div class="mb-4">
+        <button class="update-open btn btn-primary" id="update-events" data-update="true" data-post=${
+			doc.id
+		} >Update</button >
+        <button class="myBtn btn btn-secondary" data-post=${doc.id} >Delete </button >
         </div>
+		</div>
 `;
 		// temp.innerHTML = doc.data().url;
 		imgContainer.appendChild(temp);
