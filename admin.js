@@ -6,7 +6,7 @@ import {
 	getDocs,
 	deleteDoc,
 	addDoc,
-    doc
+	doc,
 } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-firestore.js";
 import {
 	getStorage,
@@ -86,6 +86,7 @@ async function myfunction(selectedFile) {
 				url: downloadURL,
 			});
 			console.log("Document written with ID: ", docRef.id);
+			location.reload();
 		});
 	});
 }
@@ -100,17 +101,15 @@ async function getImages() {
 	querySnapshot.forEach((doc) => {
 		// console.log(doc.id,doc.data());
 
-		const temp = document.createElement("h1");
-		temp.innerHTML = `<div class="col-lg-4 col-md-6 portfolio-item filter-app">
-		<div class="portfolio-wrap" >
-			<img src=${doc.data().url}  width="300" height="300"  class="img-fluid1">
+		const temp = document.createElement("div");
+		temp.innerHTML = `
+		<div class="card my-4 w-auto grid align-items-center">
+		<div class="my-2">Post uploaded with post ID ${doc.id}</div>
 
-		</div>
-
-        <button class="myBtn" data-post=${doc.id} >Delete </button >
-        </div>
-`;
-		// temp.innerHTML = doc.data().url;
+			<img src=${doc.data().url} class="rounded-2" width="720">
+		
+			<button class="myBtn my-2 btn btn-primary" data-post=${doc.id} >Delete </button >
+		<div>`;
 		imgContainer.appendChild(temp);
 	});
 

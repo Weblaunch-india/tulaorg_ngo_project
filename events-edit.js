@@ -127,7 +127,7 @@ async function getImages() {
 		<div class="portfolio-wrap card-body" >
 			<h3 id="${doc.id}-title" class="card-title">${doc.data().title}</h3>
 			<p id="${doc.id}-content"  class="card-text">${doc.data().content}</p>
-			<img src="${doc.data().url}">
+			<img src="${doc.data().url}" style="max-height: 30vh;">
 		</div>
 
 		<div class="mb-4">

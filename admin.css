@@ -1,4 +1,3 @@
-
 .modal {
 	display: none; /* Hidden by default */
 	position: fixed; /* Stay in place */
@@ -36,3 +35,6 @@
 	cursor: pointer;
 }
 
+.card {
+	background-color: black;
+}

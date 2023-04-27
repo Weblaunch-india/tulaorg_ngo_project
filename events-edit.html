@@ -29,8 +29,8 @@
         <h3>Title</h3>
         <input input="text" class="form-control" id="input-title" />
         <h3>Content</h3>
-        <textarea type="text" class="content-text form-control" style="height: 30rem;" id="input-content" ></textarea>
-        <h3 for="formFile" class="form-label">Default file input example</h3>
+        <textarea type="text" class="content-text form-control" style="height: 30rem;" id="input-content"></textarea>
+        <h3 for="formFile" class="form-label my-2">Default file input example</h3>
         <input type="file" class="form-control"" id=" photo"
             accept="image/png , image/jpeg , image/webp , image/ai , image/jpg ">
         <button id="image-upload-btn" class="btn btn-primary mt-4">Upload</button>
@@ -52,9 +52,9 @@
         <div class="modal-content">
             <div>
                 <span class="close">&times;</span>
-                <p>Some text in the Modal..</p>
-                <input type="password" id="current-password" placeholder="password" />
-                <button id="input-password">Submit</button>
+                <p>Enter the password</p>
+                <input type="password" id="current-password"  class="form-control mb-4 " placeholder="password" />
+                <button id="input-password" class="btn btn-primary">Submit</button>
 
             </div>
         </div>
@@ -69,8 +69,9 @@
             <div>
                 <span class="close">&times;</span>
                 <p>Some text in the Modal..</p>
-                <input id="updated-title"  class="form-control mb-4" value="" />
-                <textarea id="updated-content" style="height: 30rem;" class="content-text form-control" value=""></textarea>
+                <input id="updated-title" class="form-control mb-4" value="" />
+                <textarea id="updated-content" style="height: 30rem;" class="content-text form-control"
+                    value=""></textarea>
 
                 <input type="password" id="current-update-password" placeholder="password" />
                 <!-- <button onclick="SubmitEvent()" id="input-password">Submit</button> -->
