@@ -169,7 +169,7 @@ let testpassword = "";
 async function deleteImage() {
 	if (testpassword == password) {
 		// alert(id);
-		await deleteDoc(doc(db, "images", id));
+		await deleteDoc(doc(db, "events", id));
 		// testpassword = "";
 		location.reload();
 	} else {
