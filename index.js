@@ -26,12 +26,12 @@ async function getImages() {
 	console.log(querySnapshot);
 	querySnapshot.forEach((doc) => {
 		console.log(doc.data());
-		const temp = document.createElement("h1");
-		temp.innerHTML = `        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+		const temp = document.createElement("div");
+		temp.className = 'col-lg-4 col-md-6 portfolio-item filter-app';
+		temp.innerHTML = `
 		<div class="portfolio-wrap">
 			<img src=${doc.data().url}  width="300" height="300"  class="img-fluid1">
 		</div>
-	</div>
 `;
 		// temp.innerHTML = doc.data().url;
 		imgContainer.appendChild(temp);
