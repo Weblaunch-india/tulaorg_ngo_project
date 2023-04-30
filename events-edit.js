@@ -97,6 +97,8 @@ async function myfunction(selectedFile, title, content) {
 	// put file to firebase
 	const storageRef = ref(storage, name);
 
+	
+
 	uploadBytesResumable(storageRef, selectedFile).then(async (snapshot) => {
 		console.log("Uploaded a blob or file!");
 		getDownloadURL(snapshot.ref).then(async (downloadURL) => {
@@ -108,6 +110,7 @@ async function myfunction(selectedFile, title, content) {
 			console.log("Document written with ID: ", docRef.id);
 		});
 	});
+	location.reload();
 }
 
 const imgContainer = document.getElementById("image-container");
@@ -168,9 +171,9 @@ let testpassword = "";
 
 async function deleteImage() {
 	if (testpassword == password) {
-		// alert(id);
+		alert(id);
 		await deleteDoc(doc(db, "images", id));
-		// testpassword = "";
+		testpassword = "";
 		location.reload();
 	} else {
 		alert("false");
@@ -181,7 +184,7 @@ document.getElementById("input-password").addEventListener("click", (e) => {
 	deleteImage();
 });
 
-document.getElementById("current-password").addEventListener("keyup", (e) => {
+document.getElementById("current-password").addEventListener("keypress", (e) => {
 	testpassword = e.target.value;
 	console.log(testpassword);
 });
@@ -189,10 +192,9 @@ document.getElementById("current-password").addEventListener("keyup", (e) => {
 console.log(imgContainer);
 
 async function updateEvent() {
-	const washingtonRef = doc(db, "events", id);
+	const updateRef = doc(db, "events", id);
 
-	// Set the "capital" field of the city 'DC'
-	await updateDoc(washingtonRef, {
+	await updateDoc(updateRef, {
 		title: document.getElementById(`updated-title`).value,
 		content: document.getElementById(`updated-content`).value,
 	});
