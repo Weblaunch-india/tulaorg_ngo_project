@@ -80,7 +80,8 @@ uploadBtn.addEventListener("click", (e) => {
 });
 
 async function getfile() {
-	var pic = document.getElementById("photo");
+	const pic = document.getElementById("photo");
+	console.log(pic);
 
 	// selected file is that file which user chosen by html form
 	const selectedFile = pic.files[0];
