@@ -30,6 +30,7 @@ const db = getFirestore(app);
 const storage = getStorage(app);
 const password = "testing";
 
+var uploadModel = document.getElementById("uploadModal");
 var modal = document.getElementById("myModal");
 var updateModal = document.getElementById("updateModal");
 // Get the button that opens the modal
@@ -38,9 +39,13 @@ var btn = document.getElementsByClassName("myBtn");
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
-function displayModel() {
-	modal.style.display = "block";
-}
+document.getElementById("input-upload-password").addEventListener("click", (e) => {
+	if (testpassword === password) {
+		getfile();
+	} else {
+		alert("Wrong password");
+	}
+});
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function () {
@@ -76,7 +81,10 @@ contentCont.addEventListener("keyup", (e) => {
 });
 
 uploadBtn.addEventListener("click", (e) => {
-	getfile();
+	uploadModel.style.display = "block";
+
+	// getfile();
+	// alert("Wrong password");
 });
 
 async function getfile() {
@@ -97,8 +105,6 @@ async function myfunction(selectedFile, title, content) {
 	// put file to firebase
 	const storageRef = ref(storage, name);
 
-	
-
 	uploadBytesResumable(storageRef, selectedFile).then(async (snapshot) => {
 		console.log("Uploaded a blob or file!");
 		getDownloadURL(snapshot.ref).then(async (downloadURL) => {
@@ -108,9 +114,9 @@ async function myfunction(selectedFile, title, content) {
 				content: content,
 			});
 			console.log("Document written with ID: ", docRef.id);
+			// location.reload();
 		});
 	});
-	location.reload();
 }
 
 const imgContainer = document.getElementById("image-container");
@@ -172,7 +178,7 @@ let testpassword = "";
 async function deleteImage() {
 	if (testpassword == password) {
 		// alert(id);
-		await deleteDoc(doc(db, "images", id));
+		await deleteDoc(doc(db, "events", id));
 		// testpassword = "";
 		location.reload();
 	} else {
@@ -184,7 +190,13 @@ document.getElementById("input-password").addEventListener("click", (e) => {
 	deleteImage();
 });
 
-document.getElementById("current-password").addEventListener("keypress", (e) => {
+document.getElementById("current-password").addEventListener("keyup", (e) => {
+	testpassword = e.target.value;
+	console.log(testpassword);
+});
+
+
+document.getElementById("current-upload-password").addEventListener("keyup", (e) => {
 	testpassword = e.target.value;
 	console.log(testpassword);
 });
