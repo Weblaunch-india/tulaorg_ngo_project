@@ -7,6 +7,10 @@
     font-family: 'Playfair Display', serif;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 .div-of-nav {
     position: sticky;
 }
@@ -1577,8 +1581,6 @@ transition: all 0.3s ease;
     display: flex;
 }
 .part1-heading1{
-    font-size: 40px;
-    padding: 50px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .part1-heading12{
@@ -1614,9 +1616,6 @@ transition: all 0.3s ease;
     }
     .part1-heading1{
         font-size: 20px;
-        padding: 20px;
-        padding-top: 10px;
-        padding-bottom: 5px;
     }
     .part1-heading12{
         font-size: 20px;
@@ -2560,10 +2559,6 @@ background-color: #cb1a1a;
     font-size: 20px;
     color: white;
 }
-.part1-heading1{
-    font-size: 40px;
-    padding: 50px;
-}
 .part1-para1{
     font-size: 18px;
     padding: 40px;
@@ -2599,9 +2594,6 @@ background-color: #cb1a1a;
     }
     .part1-heading1{
         font-size: 20px;
-        padding: 20px;
-        padding-top: 10px;
-        padding-bottom: 5px;
     }
     .part1-para1{
         font-size: 12px;
