@@ -30,6 +30,7 @@ const db = getFirestore(app);
 const storage = getStorage(app);
 const password = "testing";
 
+var uploadModel = document.getElementById("uploadModal");
 var modal = document.getElementById("myModal");
 var updateModal = document.getElementById("updateModal");
 // Get the button that opens the modal
@@ -38,9 +39,13 @@ var btn = document.getElementsByClassName("myBtn");
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
-function displayModel() {
-	modal.style.display = "block";
-}
+document.getElementById("input-upload-password").addEventListener("click", (e) => {
+	if (testpassword === password) {
+		getfile();
+	} else {
+		alert("Wrong password");
+	}
+});
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function () {
@@ -76,7 +81,10 @@ contentCont.addEventListener("keyup", (e) => {
 });
 
 uploadBtn.addEventListener("click", (e) => {
-	getfile();
+	uploadModel.style.display = "block";
+
+	// getfile();
+	// alert("Wrong password");
 });
 
 async function getfile() {
@@ -106,6 +114,7 @@ async function myfunction(selectedFile, title, content) {
 				content: content,
 			});
 			console.log("Document written with ID: ", docRef.id);
+			// location.reload();
 		});
 	});
 }
@@ -186,13 +195,18 @@ document.getElementById("current-password").addEventListener("keyup", (e) => {
 	console.log(testpassword);
 });
 
+
+document.getElementById("current-upload-password").addEventListener("keyup", (e) => {
+	testpassword = e.target.value;
+	console.log(testpassword);
+});
+
 console.log(imgContainer);
 
 async function updateEvent() {
-	const washingtonRef = doc(db, "events", id);
+	const updateRef = doc(db, "events", id);
 
-	// Set the "capital" field of the city 'DC'
-	await updateDoc(washingtonRef, {
+	await updateDoc(updateRef, {
 		title: document.getElementById(`updated-title`).value,
 		content: document.getElementById(`updated-content`).value,
 	});
