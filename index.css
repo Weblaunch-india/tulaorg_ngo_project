@@ -1566,7 +1566,7 @@ transition: all 0.3s ease;
     width: 105%;
     height: 105%;
     transition: 0.2s;
-    box-shadow: 0 4rem 8rem rgba(0,0,0,0.5);
+    box-shadow: 0 1rem 1.5rem rgba(0,0,0,0.5);
 }
 .profile-card{
     padding: 10px;
