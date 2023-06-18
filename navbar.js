@@ -22,3 +22,16 @@ function show_hide()
         return a=1;
     }
 }    
+
+
+
+$(document).ready(function(){
+    $(window).scroll(function(){
+    if($(window).scrollTop() > 20 ){
+    $('.navs1').addClass('navbar-scroll');
+    }
+    else{
+    $('.navs1').removeClass('navbar-scroll');
+    }
+    });
+    });
