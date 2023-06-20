@@ -2652,7 +2652,7 @@ a {
     }
 }
 
-@media screen and (max-width: 300px) {
+/* @media screen and (max-width: 300px) {
     .img-fluid1 {
         width: 30px;
         height: 30px;
@@ -2670,7 +2670,7 @@ a {
     .filter-app {
         width: fit-content !important;
     }
-}
+} */
 
 
 
