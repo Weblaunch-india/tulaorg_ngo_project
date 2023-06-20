@@ -2632,6 +2632,26 @@ a {
     }
 }
 
+@media screen and (max-width: 490px) {
+    .img-fluid1 {
+        width: 70px;
+        height: 70px;
+    }
+    .filter-app {
+        width: fit-content !important;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .img-fluid1 {
+        width: 40px;
+        height: 40px;
+    }
+    .filter-app {
+        width: fit-content !important;
+    }
+}
+
 
 
 a:hover {
