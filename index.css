@@ -125,6 +125,20 @@ body {
     color: #ea1538;
 }
 
+/* Author Section */
+
+.author-img {
+    height: 14rem;
+    width: 14rem;
+    border-radius: 50rem;
+}
+
+/* End of author Section */
+/* .credits {
+    padding: 10px !important;
+    background: #212529;
+} */
+
 nav ul li {
     list-style-type: none;
     display: inline-block;
@@ -260,7 +274,6 @@ nav ul li {
 
 .navs1 .nav-hamburger {
     display: none;
-
     top: 35px;
     right: 50px;
     width: 75px;
@@ -350,59 +363,44 @@ transition: all 0.3s ease;
     }
 
     .navs1 .nav-hamburger {
-
         display: block;
         top: -4px;
         padding: 8px;
         right: 18px;
     }
 
-    @media screen and (max-width : 1110px) {
-        .navs1 {
-            padding: 0;
-           margin-bottom: 10px;
-        }
     
-        .navs1 .nav-hamburger {
-            display: block;
-            top: -4px;
-            padding: 8px;
-            right: 18px;
-        }
+    .navhide {
+        top: 0;
+        left: 0;
+        position: absolute;
+        background-color: white;
+        box-shadow: 0 0 10px gray;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -100%;
+        transition: all 0.5s ease;
+
+    }
+    .navhide.mobile-menu{
+        margin-left: 0;
     
-        .navhide {
-            top: 0;
-            left: 0;
-            position: absolute;
-            background-color: white;
-            box-shadow: 0 0 10px gray;
-            width: 100%;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-left: -100%;
-            transition: all 0.5s ease;
-    
-        }
-        .navhide.mobile-menu{
-            margin-left: 0;
-        
-        }
-    
-        .navhide ul {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-    
-        .navs1 .navhide ul li {
-            margin: 20px 0;
-            font-size: 1.2em;
-    
-    
-        }
-    
+    }
+
+    .navhide ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navs1 .navhide ul li {
+        margin: 20px 0;
+        font-size: 1.2em;
+
+
     }
     
 
@@ -1272,14 +1270,6 @@ nav ul li {
 }
 
 
-
-.navs1 .nav-hamburger {
-    display: none;
-    position: absolute;
-    top: 35px;
-    right: 50px;
-    width: 75px;
-}
 .footer{
     background-color: #24262d;
     padding: 70px 0;
@@ -2168,12 +2158,6 @@ nav ul li {
 
 
 
-.navs1 .nav-hamburger {
-    display: none;
-    top: 35px;
-    right: 50px;
-    width: 75px;
-}
 .footer{
     background-color: #24262d;
     padding: 70px 0;
@@ -3315,13 +3299,6 @@ nav ul li {
 }
 
 
-
-.navs1 .nav-hamburger {
-    display: none;
-    top: 35px;
-    right: 50px;
-    width: 75px;
-}
 .footer{
     background-color: #24262d;
     padding: 70px 0;
