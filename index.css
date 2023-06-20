@@ -1120,8 +1120,8 @@ border-color:  #ffffff;
 
 @media screen and (max-width: 500px) {
     #whatsapp, #topbtn {
-        /* left: 10px; */
-        display: none;
+        left: 10px;
+        /* display: none; */
     }
 }
 
