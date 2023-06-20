@@ -2642,19 +2642,10 @@ a {
     }
 }
 
-/* @media screen and (max-width: 370px) {
-    .img-fluid1 {
-        width: 40px;
-        height: 40px;
-    }
-    .filter-app {
-        width: fit-content !important;
-    }
-}
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 370px) {
     .img-fluid1 {
-        width: 30px;
+        width: 36px;
         height: 30px;
     }
     .filter-app {
@@ -2662,15 +2653,15 @@ a {
     }
 }
 
-@media screen and (max-width: 280px) {
+@media screen and (max-width: 285px) {
     .img-fluid1 {
-        width: 20px;
-        height: 20px;
+        width: 30px;
+        height: 25px;
     }
     .filter-app {
         width: fit-content !important;
     }
-} */
+}
 
 
 
