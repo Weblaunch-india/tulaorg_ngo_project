@@ -355,7 +355,17 @@ transition: all 0.3s ease;
     color:#24262b;
     background-color: #ffffff;
 }
+.logo12::after {
+    content: "TULA SUBHASH WELFARE SOCIETY"
+}
 
+
+/* TULA SUBHASH WELFARE SOCIETY */
+@media screen and (max-width: 390px) {
+    .logo12::after {
+        content: "TSWS";
+    }
+}
 
 @media screen and (max-width : 1110px) {
     .navs1 {
@@ -996,7 +1006,7 @@ transition: all 0.3s ease;
         padding-right: 100px;
     }
     .first-cont-img{
-        width: 320px;
+        width: 200px;
         height: 262px;
     }
     .first-section1{
