@@ -2635,7 +2635,7 @@ a {
 @media screen and (max-width: 490px) {
     .img-fluid1 {
         width: 60px;
-        height: 40px;
+        height: 60px;
     }
     .filter-app {
         width: fit-content !important;
