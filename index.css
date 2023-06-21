@@ -18,15 +18,18 @@ body {
     z-index: 1000;
 }
 
-.navbar-scroll {
-    position: fixed;
-    width: 100%;
-    /* background-color: whitesmoke !important; */
-    box-shadow: 0px 15px 10px -10px rgba(0, 0, 0, 0.3);
-    transition: 0.5s;
-    animation: scroll 0.6s 1;
-    z-index: 100000;
-  }
+@media screen and (min-width: 720px) {
+    .navbar-scroll {
+        position: fixed;
+        width: 100%;
+        /* background-color: whitesmoke !important; */
+        box-shadow: 0px 15px 10px -10px rgba(0, 0, 0, 0.3);
+        transition: 0.5s;
+        animation: scroll 0.6s 1;
+        z-index: 100000;
+      }
+}
+
 
 .navs1 {
     height: 10vh;
