@@ -2604,7 +2604,7 @@ body {
 a {
   color: #009970;
 }
-.img-fluid1 
+.img-fluid1, .img-fluid2
 {
     width: 300px;
     height: 300px;
@@ -2637,7 +2637,7 @@ a {
 
 @media screen and (max-width: 490px) {
     .img-fluid1 {
-        width: 60px;
+        width: 70px;
         height: 60px;
     }
     .filter-app {

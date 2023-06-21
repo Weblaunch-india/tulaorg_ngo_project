@@ -30,7 +30,7 @@ async function getImages() {
 		temp.className = 'col-lg-4 col-md-6 portfolio-item filter-app';
 		temp.innerHTML = `
 		<div class="portfolio-wrap">
-			<img src=${doc.data().url}  width="300" height="300"  class="img-fluid1">
+			<img src=${doc.data().url}  width="300" height="300"  class="img-fluid2">
 		</div>
 `;
 		// temp.innerHTML = doc.data().url;
